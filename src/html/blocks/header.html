@@ -1,7 +1,56 @@
 <header class="header">
-    <div class="container">
-     
-        
+    <div class="header-top">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#!" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Доставка и оплата</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Гарантия</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Вопросы и ответы</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Акции</a></li>
+                    <li class="nav__item"><a href="#!" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="header-bottom">
+        <div class="container">
+            <div class="header__info">
+                <a href="#!" class="logo">LO<span class="logo__accent">GO</span></a>
+
+                <div class="header__search">
+                    <button class="catalog">
+                        <svg class="icon icon--catalog">
+                            <use href="./img/svgsprite/sprite.symbol.svg#catalog"></use>
+                        </svg>
+                        Каталог
+                    </button>
+
+                    <form action="#" class="header__search">
+                        <input type="text" class="header__search-input" placeholder="Введите название">
+                        <button class="header__search-button">
+                            <svg class="icon icon--search">
+                                <use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="header__contacts">
+                    <a class="header__tel" href="tel:+78002810212">8(800)281-02-12</a>
+                    <p class="header__time">пн-чт: 9:00—18:00, пт: 9:00–17:00</p>
+                </div>  
+
+                <div class="header__favorite">
+                    <a class="header__favorite-link" href="#!">
+                        <svg class="icon icon--favorite">
+                            <use href="./img/svgsprite/sprite.symbol.svg#favorite-01"></use>
+                        </svg>
+                    </a>
+                </div> 
+            </div>
+        </div>
     </div>
 </header>
 @@include('mobile-nav.html')

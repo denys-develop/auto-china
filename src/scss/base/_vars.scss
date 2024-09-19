@@ -6,6 +6,8 @@
 	--font-family: "Manrope", sans-serif;
 	--second-family: "Roboto", sans-serif;
 	--third-family: "Inter", sans-serif;
+	--font3: "Font Awesome 6 Pro", sans-serif;
+	
 
 	// Colors
 	--black: #272635;
@@ -13,24 +15,20 @@
 	--light-blue: #1d85f8;
 	--grey: #888;
 	--light-grey: #f0f0f0;
-	--lignt-blue: #bfd9da;
+	--light-blue-2: #bfd9da;
 	--red: #fd6b3e;
 	--white: #fff;
+	--secondary-grey: #dedede;
 	
-
-
-	--page-bg: #fff;
-	--text-color: #272635;
-	--accent: #fd6b3e;
-	--link-color: #2578c8;
+	
+	//Color text
+	--page-bg: var(--white);
+	--text-color: var(--black);
+	--accent: var(--red);
+	--link-color: var(--light-blue);
 
 
     --laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
-}
-
-.dark {
-    --page-bg: #252526;
-    --text-color: #fff;
 }

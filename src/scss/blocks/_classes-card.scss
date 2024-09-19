@@ -1,0 +1,37 @@
+.classes-card {
+    border-radius: 16px;
+    padding: 20px 24px 0px 24px;
+    width: 285px;
+    height: 180px;
+    background: #ececec;
+
+    position: relative;
+}
+
+.classes-card__link {
+    display: inline-block;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--black);
+
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    transition: color .3s ease-in;
+
+    &:hover {
+        color: var(--light-blue);
+    }
+}

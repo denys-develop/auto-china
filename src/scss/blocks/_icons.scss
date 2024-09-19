@@ -1,0 +1,29 @@
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 24px;
+	height: 24px;
+}
+
+.icon--catalog {
+	fill: var(--white);
+}
+
+.icon--search {
+	stroke: var(--white);
+    width: 32px;
+    height: 32px;
+}
+
+// .icon--search.active {
+// 	stroke: var(--grey);
+// }
+
+
+.icon--favorite {
+	fill: var(--white);
+}
+
+// .icon--favorite.active {
+// 	fill: var(--blue);
+// }

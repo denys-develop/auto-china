@@ -13,7 +13,59 @@
 
 	<body>
 		<header class="header">
-			<div class="container"></div>
+			<div class="header-top">
+				<div class="container">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#!" class="nav__link">О&#160;нас</a></li>
+							<li class="nav__item"><a href="#!" class="nav__link">Доставка и&#160;оплата</a></li>
+							<li class="nav__item"><a href="#!" class="nav__link">Гарантия</a></li>
+							<li class="nav__item"><a href="#!" class="nav__link">Вопросы и&#160;ответы</a></li>
+							<li class="nav__item"><a href="#!" class="nav__link">Акции</a></li>
+							<li class="nav__item"><a href="#!" class="nav__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header__info">
+						<a href="#!" class="logo">LO<span class="logo__accent">GO</span></a>
+
+						<div class="header__search">
+							<button class="catalog">
+								<svg class="icon icon--catalog">
+									<use href="./img/svgsprite/sprite.symbol.svg#catalog"></use>
+								</svg>
+								Каталог
+							</button>
+
+							<form action="#" class="header__search">
+								<input type="text" class="header__search-input" placeholder="Введите название" />
+								<button class="header__search-button">
+									<svg class="icon icon--search">
+										<use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+
+						<div class="header__contacts">
+							<a class="header__tel" href="tel:+78002810212">8(800)281-02-12</a>
+							<p class="header__time">пн-чт: 9:00&#8211;18:00, пт: 9:00&#8211;17:00</p>
+						</div>
+
+						<div class="header__favorite">
+							<a class="header__favorite-link" href="#!">
+								<svg class="icon icon--favorite">
+									<use href="./img/svgsprite/sprite.symbol.svg#favorite-01"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</header>
 		<div class="mobile-nav">
 			<ul class="mobile-nav__list">
@@ -29,7 +81,274 @@
 		<!-- <button class="mobile-nav-btn">
     <div class="nav-icon"></div>
 </button> -->
-		<main class="main"></main>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__content">
+						<h1 class="hero__title">Безопасная и&#160;удобная покупка китайских автомобилей</h1>
+						<a href="#" class="hero__button">Посмотреть каталог</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="brands">
+				<div class="container">
+					<div class="block-title">
+						<h2 class="title popular-cars__title-mobile">Популярные автомобили</h2>
+					</div>
+
+					<div class="brands-cars__row">
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/changan.webp 1x, ./img/brands/changan@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/changan.jpg 1x, ./img/brands/changan@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/changan.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Changan</a>
+							</div>
+
+							<div class="brands-card__count">21</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/exeed.webp 1x, ./img/brands/exeed@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/exeed.jpg 1x, ./img/brands/exeed@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/exeed.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">EXEED</a>
+							</div>
+
+							<div class="brands-card__count">92</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/dongfeng.webp 1x, ./img/brands/dongfeng@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/dongfeng.jpg 1x, ./img/brands/dongfeng@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/dongfeng.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Dongfeng</a>
+							</div>
+
+							<div class="brands-card__count">15</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/chery.webp 1x, ./img/brands/chery@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/chery.jpg 1x, ./img/brands/chery@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/chery.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">CHERY</a>
+							</div>
+
+							<div class="brands-card__count">42</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/faw.webp 1x, ./img/brands/faw@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/faw.jpg 1x, ./img/brands/faw@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/faw.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">FAW</a>
+							</div>
+
+							<div class="brands-card__count">63</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/gac.webp 1x, ./img/brands/gac@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/gac.jpg 1x, ./img/brands/gac@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/gac.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">GAC</a>
+							</div>
+
+							<div class="brands-card__count">44</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/geely.webp 1x, ./img/brands/geely@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/geely.jpg 1x, ./img/brands/geely@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/geely.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Geely</a>
+							</div>
+
+							<div class="brands-card__count">11</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/greatwall.webp 1x, ./img/brands/greatwall@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/greatwall.jpg 1x, ./img/brands/greatwall@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/greatwall.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Greatwall</a>
+							</div>
+
+							<div class="brands-card__count">6</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/haval.webp 1x, ./img/brands/haval@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/haval.jpg 1x, ./img/brands/haval@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/haval.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Haval</a>
+							</div>
+
+							<div class="brands-card__count">21</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/jac.webp 1x, ./img/brands/jac@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/jac.jpg 1x, ./img/brands/jac@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/jac.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">JAC</a>
+							</div>
+
+							<div class="brands-card__count">61</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/forthing.webp 1x, ./img/brands/forthing@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/forthing.jpg 1x, ./img/brands/forthing@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/forthing.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Forthing</a>
+							</div>
+
+							<div class="brands-card__count">39</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/foton.webp 1x, ./img/brands/foton@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/foton.jpg 1x, ./img/brands/foton@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/foton.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Foton</a>
+							</div>
+
+							<div class="brands-card__count">72</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/haima.webp 1x, ./img/brands/haima@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/haima.jpg 1x, ./img/brands/haima@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/haima.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Haima</a>
+							</div>
+
+							<div class="brands-card__count">12</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/baic.webp 1x, ./img/brands/baic@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/baic.jpg 1x, ./img/brands/baic@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/baic.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">BAIC</a>
+							</div>
+
+							<div class="brands-card__count">120</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/hongqi.webp 1x, ./img/brands/hongqi@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/hongqi.jpg 1x, ./img/brands/hongqi@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/hongqi.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Hongqi</a>
+							</div>
+
+							<div class="brands-card__count">31</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/omoda.webp 1x, ./img/brands/omoda@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/omoda.jpg 1x, ./img/brands/omoda@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/omoda.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">OMODA</a>
+							</div>
+
+							<div class="brands-card__count">1200</div>
+						</article>
+						<article class="brands-card">
+							<div class="brands-card__wrap">
+								<picture>
+									<source srcset="./img/brands/tank.webp 1x, ./img/brands/tank@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/brands/tank.jpg 1x, ./img/brands/tank@2x.jpg 2x" type="image/jpeg" />
+									<img class="brands-card-img" src="./img/brands/tank.jpg" alt="brands" />
+								</picture>
+								<a href="#!" class="brands-card__title">Tank</a>
+							</div>
+
+							<div class="brands-card__count">27</div>
+						</article>
+						<a href="#!" class="brands__link">Все марки</a>
+					</div>
+				</div>
+			</section>
+			<section class="classes">
+				<div class="container">
+					<div class="block-title">
+						<h2 class="title popular-cars__title-mobile">Автомобили по&#160;классам</h2>
+					</div>
+
+					<div class="brands-cars__row">
+						<article class="classes-card">
+							<a class="classes-card__link" href="#!">Эконом</a>
+							<picture>
+								<source srcset="./img/classes/econom.webp 1x, ./img/classes/econom@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/classes/econom.png 1x, ./img/classes/econom@2x.png 2x" type="image/png" />
+								<img class="classes-card__img" src="./img/classes/econom.png" alt="classes" />
+							</picture>
+						</article>
+						<article class="classes-card">
+							<a class="classes-card__link" href="#!">Комфорт</a>
+							<picture>
+								<source srcset="./img/classes/comfort.webp 1x, ./img/classes/comfort@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/classes/comfort.png 1x, ./img/classes/comfort@2x.png 2x" type="image/png" />
+								<img class="classes-card__img" src="./img/classes/comfort.png" alt="classes" />
+							</picture>
+						</article>
+						<article class="classes-card">
+							<a class="classes-card__link" href="#!">Бизнес</a>
+							<picture>
+								<source srcset="./img/classes/business.webp 1x, ./img/classes/business@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/classes/business.png 1x, ./img/classes/business@2x.png 2x" type="image/png" />
+								<img class="classes-card__img" src="./img/classes/business.png" alt="classes" />
+							</picture>
+						</article>
+						<article class="classes-card">
+							<a class="classes-card__link" href="#!">Премиум</a>
+							<picture>
+								<source srcset="./img/classes/premium.webp 1x, ./img/classes/premium@2x.webp 2x" type="image/webp" />
+								<source srcset="./img/classes/premium.png 1x, ./img/classes/premium@2x.png 2x" type="image/png" />
+								<img class="classes-card__img" src="./img/classes/premium.png" alt="classes" />
+							</picture>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer class="footer">
 			<div class="container"></div>
 		</footer>

@@ -1,0 +1,25 @@
+[
+    {
+        "link": "#!",
+        "title": "Эконом",
+        "img": "econom"
+    },
+
+    {
+        "link": "#!",
+        "title": "Комфорт",
+        "img": "comfort"
+    },
+
+    {
+        "link": "#!",
+        "title": "Бизнес",
+        "img": "business"
+    },
+
+    {
+        "link": "#!",
+        "title": "Премиум",
+        "img": "premium"
+    }
+]
