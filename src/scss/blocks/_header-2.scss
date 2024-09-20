@@ -1,33 +1,26 @@
-.header {
-	// background-color: #060d17;
-	position: fixed;
-	z-index: 10;
-	width: 100%;
+.header2 {
+	
 }
 
 // Header Top
-.header-top {
+.header-top2 {
 	padding: 7.5px 0;
-
+    background: var(--blue);
 	border-bottom: 1px solid var(--black);
 }
-.nav {
 
-}
-.nav__list {
+.nav__list2 {
 	display: flex;
 	align-items: center;
 	gap: 20px;
 }
-.nav__item {
 
-}
-.nav__link {
+.nav__link2 {
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 120%;
-	color: var(--grey);
+	color: var(--white);
 	transition: color .3s ease-in;
 
 	&:hover {
@@ -36,11 +29,11 @@
 }
 
 // Header Bottom
-.header-bottom {
+.header-bottom2 {
 	padding-top: 20px;
 }
 
-.header__info {
+.header__info2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -48,7 +41,7 @@
 }
 
 // Header Search
-.header__search {
+.header__search2 {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -82,13 +75,13 @@
 }
 
 
-.header__search-input {
+.header__search-input2 {
 	border-radius: 8px;
 	padding: 0px 56px 0px 16px;
 	width: 585px;
 	height: 40px;
-	background: #202f3e;
-	color: var(--white);
+	background: var(--light-grey);
+	color: var(--black);
 
 	&::placeholder {
 		font-family: var(--font-family);
@@ -99,37 +92,37 @@
 	}
 }
 
-.header__search-button {
+.header__search-button2 {
 	position: absolute;
 	top: 4px;
 	right: 24px;
 }
 
 // Header Contacts
-.header__contacts {
+.header__contacts2 {
 	text-align: right;
 	font-family: var(--font-family);
 	line-height: 120%;
 }
 
-.header__tel {
+.header__tel2 {
 	font-weight: 400;
 	font-size: 18px;
-	color: var(--white);
+	color: var(--black);
 }
 
-.header__time {
+.header__time2 {
 	font-weight: 500;
 	font-size: 14px;
 	color: var(--grey);
 }
 
 // Header Favorite
-.header__favorite {
+.header__favorite2 {
 	border-radius: 100px;
 	width: 48px;
 	height: 48px;
-	background: #202f3e;
+    background: var(--light-grey);
 
 	padding: 12px;
 }

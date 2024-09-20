@@ -15,6 +15,12 @@
     height: 32px;
 }
 
+.icon--search2 {
+	stroke: var(--grey);
+    width: 32px;
+    height: 32px;
+}
+
 // .icon--search.active {
 // 	stroke: var(--grey);
 // }
@@ -22,6 +28,10 @@
 
 .icon--favorite {
 	fill: var(--white);
+}
+
+.icon--favorite2 {
+	fill: var(--blue);
 }
 
 // .icon--favorite.active {
