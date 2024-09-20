@@ -1,0 +1,12 @@
+.popular-cars {
+    padding: 40px 0;
+}
+
+
+.popular-cars__row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+

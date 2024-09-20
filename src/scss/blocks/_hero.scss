@@ -39,4 +39,10 @@
     line-height: 120%;
     text-align: center;
     color: var(--white);
+
+    transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }

@@ -1,11 +1,12 @@
-// Галерея и лайтбоксы от Fancybox
-import { Fancybox } from '@fancyapps/ui';
-import '@fancyapps/ui/dist/fancybox/fancybox.css';
+// Button favorite
+import btnFav from './modules/btn-fav.js';
+btnFav();
 
-Fancybox.bind('[data-fancybox]', {
-	// Your custom options
-});
+// Swiper slider
+import swiperSlider from './modules/swiper.js';
+swiperSlider();
 
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
+ 

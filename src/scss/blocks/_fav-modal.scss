@@ -1,0 +1,29 @@
+.fav-btn-modal {
+    display: none;
+
+    position: absolute;
+    top: -15px;
+    right: -65px;
+    z-index: 30;
+
+    width: 194px;
+    height: 33px;
+    
+    border-radius: 4px;
+    padding: 8px 16px;
+
+    background: var(--white);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fav-btn-modal__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--black);
+
+    span {
+        color: var(--light-blue);
+    }
+}

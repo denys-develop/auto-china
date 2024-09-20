@@ -1,0 +1,12 @@
+.swiper-slide.swiper-slide-active, .swiper-slide.swiper-slide-next  {
+    max-width: 590px !important;
+
+
+    // @include tablet {
+    //     max-width: 550px !important;
+    // }
+
+    @include mobile {
+        width: 312px !important;
+    }
+}

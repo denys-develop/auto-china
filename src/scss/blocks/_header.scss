@@ -52,6 +52,33 @@
 	gap: 8px;
 }
 
+.catalog {
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 130px;
+    height: 40px;
+
+    background: var(--light-blue);
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+	transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
 .header__search-input {
 	border-radius: 8px;
 	padding: 0px 56px 0px 16px;
