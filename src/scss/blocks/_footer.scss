@@ -1,26 +1,126 @@
 .footer {
-	background-color: rgb(51, 50, 50);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
+	padding: 30px 0;
+}
 
-	h1 {
-		font-size: 32px;
-	}
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	flex-wrap: wrap;
 
-	a {
-		// color: var(--link-color);
-		color: #fff;
-		text-decoration: underline;
-	}
+	margin-bottom: 20px;
+}
 
-	@media (max-width: 1200px) {
-		font-size: 26px;
+.footer__nav {
+	display: flex;
+	gap: 60px;
+}
+
+.footer__nav-items {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.footer__nav-item {
+
+}
+
+.footer__nav-link {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
 	}
 }
 
-.footer__copyright {
-	padding: 10px 0;
-	font-size: 16px;
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 
+.footer__tel {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__mail {
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__social {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer__social-link {
+
+}
+
+
+
+.footer__copy {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-top: 1px solid var(--white);
+	padding-top: 20px;
+}
+
+.footer__copy-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+
+.footer__copy-link {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--white);
+
+	transition: color .3s ease-in;
+
+	&:hover {
+		color: var(--light-blue);;
+	}
+}
+
+.footer__copy-desc {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 120%;
+	color: var(--white);
+	margin-right: 35px;
 }
