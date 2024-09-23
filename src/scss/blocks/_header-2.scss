@@ -1,5 +1,5 @@
 .header2 {
-	
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 // Header Top
@@ -30,7 +30,7 @@
 
 // Header Bottom
 .header-bottom2 {
-	padding-top: 20px;
+	padding: 20px;
 }
 
 .header__info2 {
@@ -48,7 +48,7 @@
 	gap: 8px;
 }
 
-.catalog {
+.catalog-btn {
     border-radius: 8px;
     padding: 10px 16px;
     width: 130px;

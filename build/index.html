@@ -34,12 +34,14 @@
 						<a href="#!" class="logo">LO<span class="logo__accent">GO</span></a>
 
 						<div class="header__search">
-							<button class="catalog">
-								<svg class="icon icon--catalog">
-									<use href="./img/svgsprite/sprite.symbol.svg#catalog"></use>
-								</svg>
-								Каталог
-							</button>
+							<a href="catalog-auto.html" class="header__search-btn">
+								<button class="catalog-btn">
+									<svg class="icon icon--catalog">
+										<use href="./img/svgsprite/sprite.symbol.svg#catalog"></use>
+									</svg>
+									Каталог
+								</button>
+							</a>
 
 							<form action="#" class="header__search">
 								<input type="text" class="header__search-input" placeholder="Введите название" />
@@ -81,13 +83,12 @@
 		<!-- <button class="mobile-nav-btn">
     <div class="nav-icon"></div>
 </button> -->
-
 		<main class="main">
 			<section class="hero">
 				<div class="container">
 					<div class="hero__content">
 						<h1 class="hero__title">Безопасная и&#160;удобная покупка китайских автомобилей</h1>
-						<a href="#" class="hero__button">Посмотреть каталог</a>
+						<a href="catalog-auto.html" class="hero__button">Посмотреть каталог</a>
 					</div>
 				</div>
 			</section>
@@ -346,6 +347,48 @@
 								<img class="classes-card__img" src="./img/classes/premium.png" alt="classes" />
 							</picture>
 						</article>
+					</div>
+				</div>
+			</section>
+			<section class="search">
+				<div class="container">
+					<div class="search-wrapper">
+						<h2 class="search__title">Подобрать авто</h2>
+
+						<div class="search-form">
+							<form action="#!" class="search__form">
+								<div class="search__form-row">
+									<select name="transport" id="transport" class="search__form-select">
+										<option value="transport-1">Транспорт</option>
+										<option value="transport-2">Транспорт-02</option>
+										<option value="transport-3">Транспорт-03</option>
+									</select>
+
+									<select name="body" id="body" class="search__form-select">
+										<option value="body-1">Кузов</option>
+										<option value="body-2">Кузов-02</option>
+										<option value="body-3">Кузов-03</option>
+									</select>
+
+									<select name="brand" id="brand" class="search__form-select">
+										<option value="brand-1">Марка</option>
+										<option value="brand-2">Марка-02</option>
+										<option value="brand-3">Марка-03</option>
+									</select>
+
+									<select name="model" id="model" class="search__form-select">
+										<option value="model-1">Модель</option>
+										<option value="model-2">Модель-02</option>
+										<option value="model-3">Модель-03</option>
+									</select>
+
+									<input type="text" name="text" placeholder="Цена от 100 000 ₽" class="search__form-input" />
+									<input type="text" name="text" placeholder="до 22 000 000 ₽" class="search__form-input" />
+								</div>
+
+								<button class="search__form-btn">Показать 346 предложений</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
