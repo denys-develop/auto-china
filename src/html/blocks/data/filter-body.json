@@ -1,0 +1,41 @@
+[
+    {
+        "id": "sedan",
+        "name": "sedan",
+        "value": "sedan",
+        "for": "sedan",
+        "title" : "Седан"
+    }, 
+
+    {
+        "id": "hatchback-3",
+        "name": "hatchback-3",
+        "value": "hatchback-3",
+        "for": "hatchback-3",
+        "title" : "Хэчбэк 3 дв."
+    }, 
+
+    {
+        "id": "hatchback-5",
+        "name": "hatchback-5",
+        "value": "hatchback-5",
+        "for": "hatchback-5",
+        "title" : "Хэчбэк 5 дв."
+    }, 
+
+    {
+        "id": "liftback",
+        "name": "liftback",
+        "value": "liftback",
+        "for": "liftback",
+        "title" : "Лифтбэк"
+    }, 
+
+    {
+        "id": "suv-3",
+        "name": "suv-3",
+        "value": "suv-3",
+        "for": "suv-3",
+        "title" : "Внедорожник 3 дв."
+    }
+]

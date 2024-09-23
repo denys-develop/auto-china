@@ -7,92 +7,21 @@
         <div class="catalog__row">
 
             <div class="catalog__filters">
-                <div class="catalog__filter">
+                <div class="catalog__filter catalog__filter-brands">
                     <h4 class="catalog__filter-title">Марки</h4>
 
                     <div class="catalog__filter-items">
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                <img src="./../../img/catalog/aito.jpg" alt="">
-                                Aito
-                            </label>
-                        </div>
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="baic" name="baic" value="baic" />
-                            <label class="catalog__filter-item-label" for="baic">
-                                <img src="./../../img/catalog/baic.jpg" alt="">
-                                BAIC
-                            </label>
-                        </div>
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="changan" name="changan" value="changan" />
-                            <label class="catalog__filter-item-label" for="changan">
-                                <img src="./../../img/catalog/changan.jpg" alt="">
-                                Changan
-                            </label>
-                        </div>
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="chery" name="chery" value="chery" />
-                            <label class="catalog__filter-item-label" for="chery">
-                                <img src="./../../img/catalog/chery.jpg" alt="">
-                                CHERY
-                            </label>
-                        </div>
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="dongfeng" name="dongfeng" value="dongfeng" />
-                            <label class="catalog__filter-item-label" for="dongfeng">
-                                <img src="./../../img/catalog/dongfeng.jpg" alt="">
-                                Dongfeng
-                            </label>
-                        </div>
-
+                        @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
                     </div>
                     
                     <a href="#!" class="catalog__filter-link">Показать все</a>
                 </div>
 
-                <div class="catalog__filter">
+                <div class="catalog__filter catalog__filter-body">
                     <h4 class="catalog__filter-title">Кузов</h4>
 
                     <div class="catalog__filter-items">
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                Седан
-                            </label>
-                        </div>
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                Хэчбэк 3 дв.
-                            </label>
-                        </div>
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                Хэчбэк 5 дв.
-                            </label>
-                        </div>
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                Лифтбэк
-                            </label>
-                        </div>
-
-                        <div class="catalog__filter-item">
-                            <input type="checkbox" id="aito" name="aito" value="aito" />
-                            <label class="catalog__filter-item-label" for="aito">
-                                Внедорожник 3 дв.
-                            </label>
-                        </div>
-
+                        @@loop('catalog-filter/filter-body.html','blocks/data/filter-body.json')
                     </div>
                     
                     <a href="#!" class="catalog__filter-link">Показать все</a>
