@@ -1,4 +1,8 @@
 .header2 {
+	position: fixed;
+	z-index: 101;
+	width: 100%;
+
 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -31,6 +35,7 @@
 // Header Bottom
 .header-bottom2 {
 	padding: 20px;
+	background: var(--white);
 }
 
 .header__info2 {

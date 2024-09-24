@@ -1,5 +1,6 @@
 .catalog {
-
+    padding-top: 124px;
+    padding-bottom: 80px;
 }
 
 .catalog__title {
@@ -96,13 +97,52 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 16px;
 }
 
 .catalog__filter-link {
+    display: inline-block;
+
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 120%;
     color: var(--light-blue);
+
+    margin-top: 16px;
+}
+
+// Filter Button
+.catalog__filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catalog__filter-button {
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 285px;
+    height: 40px;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+
+    transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.catalog__filter-button--top {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.catalog__filter-button--bottom {
+    border: 1px solid var(--black);
+    color: var(--black);
 }

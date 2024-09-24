@@ -1,5 +1,4 @@
 function btnFav() {
-
     const autoCard = document.querySelectorAll('.auto-card');
     // let favorite = [];
   
@@ -28,25 +27,3 @@ function btnFav() {
     })
 };
 export default btnFav;
-
-
-//     btn.addEventListener('click', function(){
-//         btn.classList.toggle('btn-favorite--selected');
-
-//         if (btn.classList.contains('btn-favorite--selected')) {
-//             btnFavModal.forEach(function(btnModal){
-//                 btnModal.style.display = "block";
-
-//                 setTimeout(function(){
-//                     btnFavModal.forEach(function(btnModal){
-//                         btnModal.style.display = "none";
-//                     })
-//                 }, 1200);
-
-//             })
-           
-//         } else  {
-//             console.log("NO")
-//         }
-//     })
-// }) 

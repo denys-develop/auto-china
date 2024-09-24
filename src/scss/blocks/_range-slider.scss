@@ -1,0 +1,42 @@
+.container-range{
+  position: relative;
+  pointer-events: none;
+}
+
+.container-range input[type="range"]{
+  height: 2em;
+  display: block;
+  margin: 0;
+  width: 100%;
+ 
+}
+
+.container-range input[type="range"]:last-child{
+  margin-top: -2em;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-moz-range-thumb {
+  pointer-events: all;
+}
+input[type="range"]::-ms-thumb {
+  pointer-events: all;
+}
+
+.blocks-count {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.block-count {
+  border: 1px solid var(--secondary-grey);
+  border-radius: 8px;
+  padding: 9px 8px;
+  width: 138px;
+  height: 40px;
+  background: var(--light-grey);
+  text-align: left;
+}
