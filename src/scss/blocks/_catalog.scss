@@ -9,7 +9,8 @@
 
 .catalog__row {
     display: grid;
-    grid-template-columns: 1fr 895px;
+    // grid-template-columns: 1fr 895px;
+    grid-template-columns: 0.318fr 1fr;
     gap: 20px;
 }
 
@@ -56,48 +57,64 @@
 }
 
 // Catalog Filters
-.catalog__filters {
+// .catalog__filters {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 16px;
+// }
+
+// .catalog__filter {
+//     border-bottom: 1px solid var(--secondary-grey);
+//     padding-bottom: 16px;
+// }
+
+// .catalog__filter-title {
+//     font-family: var(--font-family);
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 120%;
+//     color: var(--black);
+//     margin-bottom: 16px;
+// }
+
+// .catalog__filter-items {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 8px;
+// }
+
+.catalog__filter-items-hidden, .catalog__filter-items-brands {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 4px;
 }
 
-.catalog__filter {
-    border-bottom: 1px solid var(--secondary-grey);
-    padding-bottom: 16px;
+.catalog__filter-items + .catalog__filter-items {
+    margin-top: 8px;
 }
 
-.catalog__filter-title {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 120%;
-    color: var(--black);
-    margin-bottom: 16px;
+.catalog__filter-items-hide-brands, .catalog__filter-items-hide-body {
+    display: none;
 }
 
-.catalog__filter-item {
-    display: flex;
-    gap: 8px;
-}
+// .catalog__filter-item {
+//     display: flex;
+//     gap: 8px;
+// }
 
-.catalog__filter-item-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+// .catalog__filter-item-label {
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
 
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
-    color: var(--black);
-}
+//     font-family: var(--font-family);
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 120%;
+//     color: var(--black);
+// }
 
-.catalog__filter-items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+
 
 .catalog__filter-link {
     display: inline-block;
@@ -109,6 +126,16 @@
     color: var(--light-blue);
 
     margin-top: 16px;
+}
+
+.catalog__filter-link-brands-hide, .catalog__filter-link-body-hide {
+    display: none;
+}
+
+// Filter Range
+
+.catalog__filter-range {
+    
 }
 
 // Filter Button

@@ -8,7 +8,7 @@
   display: block;
   margin: 0;
   width: 100%;
- 
+  pointer-events: all;
 }
 
 .container-range input[type="range"]:last-child{
