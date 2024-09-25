@@ -97,22 +97,22 @@
     display: none;
 }
 
-// .catalog__filter-item {
-//     display: flex;
-//     gap: 8px;
-// }
+.catalog__filter-item {
+    display: flex;
+    gap: 8px;
+}
 
-// .catalog__filter-item-label {
-//     display: flex;
-//     align-items: center;
-//     gap: 8px;
+.catalog__filter-item-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
-//     font-family: var(--font-family);
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 120%;
-//     color: var(--black);
-// }
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--black);
+}
 
 
 
