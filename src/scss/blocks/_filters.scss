@@ -23,7 +23,7 @@
     flex-direction: column;
     gap: 8px;
 
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
 }
 
 .filter__items-hidden {
@@ -32,20 +32,12 @@
 
 
 // Filter Link
-input[type="checkbox"] {
-    
-    border-radius: 4px;
-    width: 18px;
-    height: 18px;
-    
-    border: 1px solid var(--secondary-grey);
-    background-color: var(--light-grey);
-}
-
 .filter__links {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    margin-top: 16px;
 }
 
 .filter__link {
@@ -99,3 +91,4 @@ input[type="checkbox"] {
     border: 1px solid var(--black);
     color: var(--black);
 }
+

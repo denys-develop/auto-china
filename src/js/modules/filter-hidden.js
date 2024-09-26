@@ -11,8 +11,7 @@ function filterHidden () {
             // link.style.display = "none";
             // linkHide.style.display = "block";
             // itemHidden.style.display = "block";
-            
-           
+        
             
         })
     })
