@@ -15,45 +15,87 @@
     font-size: 16px;
     line-height: 120%;
     color: var(--black);
-
     margin-bottom: 16px;
-}
-
-
-.filter-brands {
 }
 
 .filter__items {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    margin-bottom: 16px;
 }
 
-// .filter__items-brands {
-// }
+.filter__items-hidden {
+    display: none;
+}
 
-// .filter__items-hide-brands {
-// }
 
-// .filter__items-hidden {
-// }
+// Filter Link
+input[type="checkbox"] {
+    
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    
+    border: 1px solid var(--secondary-grey);
+    background-color: var(--light-grey);
+}
 
-// .filter__links {
-// }
-
+.filter__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .filter__link {
+    display: inline-block;
+
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
     line-height: 120%;
     color: var(--light-blue);
-
-}
-
-.filter__link-brands {
 }
 
 .filter__link-hide {
     display: none;
+}
+
+// Filter Button
+.filter__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 40px;
+}
+
+.filter__button {
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 285px;
+    height: 40px;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+
+    transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.filter__button-top {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.filter__button-bottom {
+    border: 1px solid var(--black);
+    color: var(--black);
 }

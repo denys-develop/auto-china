@@ -92,11 +92,11 @@
 					</div>
 
 					<div class="catalog__row">
-						<article class="filters">
+						<div class="filters">
 							<div class="filter filter-brands">
 								<h4 class="filter__title">Марки</h4>
 
-								<div class="filter__items filter__items-brands">
+								<div class="filter__items">
 									<div class="filter__item">
 										<input type="checkbox" id="aito" name="aito" value="aito" />
 										<label class="filter__item-label" for="aito">
@@ -152,323 +152,415 @@
 											Dongfeng
 										</label>
 									</div>
-									<div class="filter__item">
-										<input type="checkbox" id="aito" name="aito" value="aito" />
-										<label class="filter__item-label" for="aito">
-											<picture>
-												<source srcset="./img/catalog/aito.webp 1x, ./img/catalog/aito@2x.webp 2x" type="image/webp" />
-												<source srcset="./img/catalog/aito.jpg 1x, ./img/catalog/aito@2x.jpg 2x" type="image/jpeg" />
-												<img src="./img/catalog/aito.jpg" alt="" />
-											</picture>
-											Aito
-										</label>
-									</div>
-									<div class="filter__item">
-										<input type="checkbox" id="baic" name="baic" value="baic" />
-										<label class="filter__item-label" for="baic">
-											<picture>
-												<source srcset="./img/catalog/baic.webp 1x, ./img/catalog/baic@2x.webp 2x" type="image/webp" />
-												<source srcset="./img/catalog/baic.jpg 1x, ./img/catalog/baic@2x.jpg 2x" type="image/jpeg" />
-												<img src="./img/catalog/baic.jpg" alt="" />
-											</picture>
-											BAIC
-										</label>
-									</div>
-									<div class="filter__item">
-										<input type="checkbox" id="changan" name="changan" value="changan" />
-										<label class="filter__item-label" for="changan">
-											<picture>
-												<source srcset="./img/catalog/changan.webp 1x, ./img/catalog/changan@2x.webp 2x" type="image/webp" />
-												<source srcset="./img/catalog/changan.jpg 1x, ./img/catalog/changan@2x.jpg 2x" type="image/jpeg" />
-												<img src="./img/catalog/changan.jpg" alt="" />
-											</picture>
-											Changan
-										</label>
-									</div>
-									<div class="filter__item">
-										<input type="checkbox" id="chery" name="chery" value="chery" />
-										<label class="filter__item-label" for="chery">
-											<picture>
-												<source srcset="./img/catalog/chery.webp 1x, ./img/catalog/chery@2x.webp 2x" type="image/webp" />
-												<source srcset="./img/catalog/chery.jpg 1x, ./img/catalog/chery@2x.jpg 2x" type="image/jpeg" />
-												<img src="./img/catalog/chery.jpg" alt="" />
-											</picture>
-											CHERY
-										</label>
-									</div>
-									<div class="filter__item">
-										<input type="checkbox" id="dongfeng" name="dongfeng" value="dongfeng" />
-										<label class="filter__item-label" for="dongfeng">
-											<picture>
-												<source srcset="./img/catalog/dongfeng.webp 1x, ./img/catalog/dongfeng@2x.webp 2x" type="image/webp" />
-												<source srcset="./img/catalog/dongfeng.jpg 1x, ./img/catalog/dongfeng@2x.jpg 2x" type="image/jpeg" />
-												<img src="./img/catalog/dongfeng.jpg" alt="" />
-											</picture>
-											Dongfeng
-										</label>
+
+									<div class="filter__items filter__items-hidden">
+										<div class="filter__item">
+											<input type="checkbox" id="aito" name="aito" value="aito" />
+											<label class="filter__item-label" for="aito">
+												<picture>
+													<source srcset="./img/catalog/aito.webp 1x, ./img/catalog/aito@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/catalog/aito.jpg 1x, ./img/catalog/aito@2x.jpg 2x" type="image/jpeg" />
+													<img src="./img/catalog/aito.jpg" alt="" />
+												</picture>
+												Aito
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="baic" name="baic" value="baic" />
+											<label class="filter__item-label" for="baic">
+												<picture>
+													<source srcset="./img/catalog/baic.webp 1x, ./img/catalog/baic@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/catalog/baic.jpg 1x, ./img/catalog/baic@2x.jpg 2x" type="image/jpeg" />
+													<img src="./img/catalog/baic.jpg" alt="" />
+												</picture>
+												BAIC
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="changan" name="changan" value="changan" />
+											<label class="filter__item-label" for="changan">
+												<picture>
+													<source srcset="./img/catalog/changan.webp 1x, ./img/catalog/changan@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/catalog/changan.jpg 1x, ./img/catalog/changan@2x.jpg 2x" type="image/jpeg" />
+													<img src="./img/catalog/changan.jpg" alt="" />
+												</picture>
+												Changan
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="chery" name="chery" value="chery" />
+											<label class="filter__item-label" for="chery">
+												<picture>
+													<source srcset="./img/catalog/chery.webp 1x, ./img/catalog/chery@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/catalog/chery.jpg 1x, ./img/catalog/chery@2x.jpg 2x" type="image/jpeg" />
+													<img src="./img/catalog/chery.jpg" alt="" />
+												</picture>
+												CHERY
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="dongfeng" name="dongfeng" value="dongfeng" />
+											<label class="filter__item-label" for="dongfeng">
+												<picture>
+													<source srcset="./img/catalog/dongfeng.webp 1x, ./img/catalog/dongfeng@2x.webp 2x" type="image/webp" />
+													<source srcset="./img/catalog/dongfeng.jpg 1x, ./img/catalog/dongfeng@2x.jpg 2x" type="image/jpeg" />
+													<img src="./img/catalog/dongfeng.jpg" alt="" />
+												</picture>
+												Dongfeng
+											</label>
+										</div>
 									</div>
 								</div>
 
 								<div class="filter__links">
-									<a href="#!" class="filter__link filter__link-brands">Показать все</a>
+									<a href="#!" class="filter__link">Показать все</a>
 									<a href="#!" class="filter__link filter__link-hide">Свернуть</a>
 								</div>
 							</div>
 
-							<!-- <div class="catalog__filter catalog__filter-body">
-        <h4 class="catalog__filter-title">Кузов</h4>
+							<div class="filter filter-body">
+								<h4 class="filter__title">Кузов</h4>
 
-        <div class="catalog__filter-items">
-            <div class="catalog__filter-item">
-    <input type="checkbox" id="sedan" name="sedan" value="sedan" />
-    <label class="catalog__filter-item-label" for="sedan">
-        Седан
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="hatchback-3" name="hatchback-3" value="hatchback-3" />
-    <label class="catalog__filter-item-label" for="hatchback-3">
-        Хэчбэк 3 дв.
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="hatchback-5" name="hatchback-5" value="hatchback-5" />
-    <label class="catalog__filter-item-label" for="hatchback-5">
-        Хэчбэк 5 дв.
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="liftback" name="liftback" value="liftback" />
-    <label class="catalog__filter-item-label" for="liftback">
-        Лифтбэк
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="suv-3" name="suv-3" value="suv-3" />
-    <label class="catalog__filter-item-label" for="suv-3">
-        Внедорожник 3 дв.
-    </label>
-</div>
-        </div>
-        
-        <div class="catalog__filter-items catalog__filter-items-hide-body">
-            <div class="catalog__filter-items">
-                <div class="catalog__filter-item">
-    <input type="checkbox" id="sedan" name="sedan" value="sedan" />
-    <label class="catalog__filter-item-label" for="sedan">
-        Седан
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="hatchback-3" name="hatchback-3" value="hatchback-3" />
-    <label class="catalog__filter-item-label" for="hatchback-3">
-        Хэчбэк 3 дв.
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="hatchback-5" name="hatchback-5" value="hatchback-5" />
-    <label class="catalog__filter-item-label" for="hatchback-5">
-        Хэчбэк 5 дв.
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="liftback" name="liftback" value="liftback" />
-    <label class="catalog__filter-item-label" for="liftback">
-        Лифтбэк
-    </label>
-</div><div class="catalog__filter-item">
-    <input type="checkbox" id="suv-3" name="suv-3" value="suv-3" />
-    <label class="catalog__filter-item-label" for="suv-3">
-        Внедорожник 3 дв.
-    </label>
-</div>
-            </div>
-        </div>
-        
-        <div class="catalog__filter-links">
-            <a href="#!" class="catalog__filter-link catalog__filter-link-body">Показать все</a>
-            <a href="#!" class="catalog__filter-link catalog__filter-link-body-hide">Свернуть</a>
-        </div>
-    </div> -->
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="sedan" name="sedan" value="sedan" />
+										<label class="filter__item-label" for="sedan">
+											Седан
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="hatchback-3" name="hatchback-3" value="hatchback-3" />
+										<label class="filter__item-label" for="hatchback-3">
+											Хэчбэк 3 дв.
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="hatchback-5" name="hatchback-5" value="hatchback-5" />
+										<label class="filter__item-label" for="hatchback-5">
+											Хэчбэк 5 дв.
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="liftback" name="liftback" value="liftback" />
+										<label class="filter__item-label" for="liftback">
+											Лифтбэк
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="suv-3" name="suv-3" value="suv-3" />
+										<label class="filter__item-label" for="suv-3">
+											Внедорожник 3 дв.
+										</label>
+									</div>
 
-							<!-- <div class="catalog__filter catalog__filter-transmission">
-        <h4 class="catalog__filter-title">Коробка</h4>
+									<div class="filter__items filter__items-hidden">
+										<div class="filter__item">
+											<input type="checkbox" id="suv-5" name="suv-5" value="suv-5" />
+											<label class="filter__item-label" for="suv-5">
+												Внедорожник 5 дв.
+											</label>
+										</div>
 
-        <div class="catalog__filter-items">
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="automatic" name="automatic" value="automatic" />
-                <label class="catalog__filter-item-label" for="automatic">
-                    Автоматическая 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="robot" name="robot" value="robot" />
-                <label class="catalog__filter-item-label" for="robot">
-                    Робот 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="variator" name="variator" value="variator" />
-                <label class="catalog__filter-item-label" for="variator">
-                    Вариатор 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="mechanical" name="mechanical" value="mechanical" />
-                <label class="catalog__filter-item-label" for="mechanical">
-                    Механическая 
-                </label>
-            </div>
-        </div>
-    </div> -->
+										<div class="filter__item">
+											<input type="checkbox" id="suv-7" name="suv-7" value="suv-7" />
+											<label class="filter__item-label" for="suv-7">
+												Внедорожник 7 дв.
+											</label>
+										</div>
+									</div>
+								</div>
 
-							<!-- <div class="catalog__filter catalog__filter-engine">
-        <h4 class="catalog__filter-title">Двигатель</h4>
+								<div class="filter__links">
+									<a href="#!" class="filter__link">Показать все</a>
+									<a href="#!" class="filter__link filter__link-hide">Свернуть</a>
+								</div>
+							</div>
 
-        <div class="catalog__filter-items">
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="petrol" name="petrol" value="petrol" />
-                <label class="catalog__filter-item-label" for="petrol">
-                    Бензин 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="diesel" name="diesel" value="diesel" />
-                <label class="catalog__filter-item-label" for="diesel">
-                    Дизель
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="hybrid" name="hybrid" value="hybrid" />
-                <label class="catalog__filter-item-label" for="hybrid">
-                    Гибрид 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="electro" name="electro" value="electro" />
-                <label class="catalog__filter-item-label" for="electro">
-                    Электро 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="turbocharged" name="turbocharged" value="turbocharged" />
-                <label class="catalog__filter-item-label" for="turbocharged">
-                    Турбированный 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="atmospheric" name="atmospheric" value="atmospheric" />
-                <label class="catalog__filter-item-label" for="atmospheric">
-                    Атмосферный 
-                </label>
-            </div>
-        </div>
+							<div class="filter filter-transmission">
+								<h4 class="filter__title">Коробка</h4>
 
-        <a href="#!" class="catalog__filter-link catalog__filter-link-collapse">Свернуть</a>
-    </div> -->
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="automatic" name="automatic" value="automatic" />
+										<label class="filter__item-label" for="automatic">
+											Автоматическая
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="robot" name="robot" value="robot" />
+										<label class="filter__item-label" for="robot">
+											Робот
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="variator" name="variator" value="variator" />
+										<label class="filter__item-label" for="variator">
+											Вариатор
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="mechanical" name="mechanical" value="mechanical" />
+										<label class="filter__item-label" for="mechanical">
+											Механическая
+										</label>
+									</div>
+								</div>
+							</div>
 
-							<!-- <div class="catalog__filter catalog__filter-steering">
-        <h4 class="catalog__filter-title">Руль</h4>
+							<div class="filter filter-engine">
+								<h4 class="filter__title">Двигатель</h4>
 
-        <div class="catalog__filter-items">
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="steering-left" name="steering-left" value="steering-left" />
-                <label class="catalog__filter-item-label" for="steering-left">
-                    Левый 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="steering-right" name="steering-right" value="steering-right" />
-                <label class="catalog__filter-item-label" for="steering-right">
-                    Правый 
-                </label>
-            </div>
-        </div>
-    </div> -->
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="petrol" name="petrol" value="petrol" />
+										<label class="filter__item-label" for="petrol">
+											Бензин
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="diesel" name="diesel" value="diesel" />
+										<label class="filter__item-label" for="diesel">
+											Дизель
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="hybrid" name="hybrid" value="hybrid" />
+										<label class="filter__item-label" for="hybrid">
+											Гибрид
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="electro" name="electro" value="electro" />
+										<label class="filter__item-label" for="electro">
+											Электро
+										</label>
+									</div>
 
-							<!-- <div class="catalog__filter catalog__filter-places">
-        <h4 class="catalog__filter-title">Количество мест</h4>
+									<div class="filter__items filter__items-hidden">
+										<div class="filter__item">
+											<input type="checkbox" id="turbo" name="turbo" value="turbo" />
+											<label class="filter__item-label" for="turbo">
+												Турбированный
+											</label>
+										</div>
 
-        <div class="catalog__filter-items">
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-2" name="places-2" value="places-2" />
-                <label class="catalog__filter-item-label" for="places-2">
-                    2 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-3" name="places-3" value="places-3" />
-                <label class="catalog__filter-item-label" for="places-3">
-                    3 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-4" name="places-4" value="places-4" />
-                <label class="catalog__filter-item-label" for="places-4">
-                    4 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-5" name="places-5" value="places-5" />
-                <label class="catalog__filter-item-label" for="places-5">
-                    5 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-6" name="places-6" value="places-6" />
-                <label class="catalog__filter-item-label" for="places-6">
-                    6 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-7" name="places-7" value="places-7" />
-                <label class="catalog__filter-item-label" for="places-7">
-                    7 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-8" name="places-8" value="places-8" />
-                <label class="catalog__filter-item-label" for="places-8">
-                    8 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-9" name="places-9" value="places-9" />
-                <label class="catalog__filter-item-label" for="places-9">
-                    9 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-10" name="places-10" value="places-10" />
-                <label class="catalog__filter-item-label" for="places-10">
-                    10 места 
-                </label>
-            </div>
-            <div class="catalog__filter-item">
-                <input type="checkbox" id="places-11" name="places-11" value="places-11" />
-                <label class="catalog__filter-item-label" for="places-11">
-                    11 места 
-                </label>
-            </div>
-        </div>
+										<div class="filter__item">
+											<input type="checkbox" id="atmospheric" name="atmospheric" value="atmospheric" />
+											<label class="filter__item-label" for="atmospheric">
+												Атмосферный
+											</label>
+										</div>
+									</div>
+								</div>
 
-        <a href="#!" class="catalog__filter-link catalog__filter-link-collapse">Свернуть</a>
-    </div> -->
+								<div class="filter__links">
+									<a href="#!" class="filter__link">Показать все</a>
+									<a href="#!" class="filter__link filter__link-hide">Свернуть</a>
+								</div>
+							</div>
 
-							<!-- <div class="catalog__filter-range">
-        <h4 class="catalog__filter-title">Объем, л</h4>
+							<div class="filter filter-drive">
+								<h4 class="filter__title">Привод</h4>
 
-        <div class="catalog__filter-items">
-            <div class="container-range">
-    <input type="range" min="0" step="1" max="10" value="3">
-    <input type="range" min="0" step="1" max="10" value="7">
-</div>
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="front" name="front" value="front" />
+										<label class="filter__item-label" for="front">
+											Передний
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="rear" name="rear" value="rear" />
+										<label class="filter__item-label" for="rear">
+											Задний
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="full" name="full" value="full" />
+										<label class="filter__item-label" for="full">
+											Полный
+										</label>
+									</div>
+								</div>
+							</div>
 
-<div class="blocks-count">
-    <div class="block-count">0.2</div>
-    <div class="block-count">4.5</div>
-</div>
-        </div>
-    </div> -->
+							<div class="filter filter-steering">
+								<h4 class="filter__title">Руль</h4>
 
-							<!-- <div class="filter-buttons">
-        <button class="catalog__filter-button catalog__filter-button--top">Показать 432 модели</button>
-        <button class="catalog__filter-button catalog__filter-button--bottom">Сбросить фильтры</button>
-    </div> -->
-						</article>
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="steering-left" name="steering-left" value="steering-left" />
+										<label class="filter__item-label" for="steering-left">
+											Левый
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="steering-right" name="steering-right" value="steering-right" />
+										<label class="filter__item-label" for="steering-right">
+											Правый
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="filter filter-seats">
+								<h4 class="filter__title">Количество мест</h4>
+
+								<div class="filter__items">
+									<div class="filter__item">
+										<input type="checkbox" id="seats-2" name="seats-2" value="seats-2" />
+										<label class="filter__item-label" for="seats-2">
+											2 места
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="seats-3" name="seats-3" value="seats-3" />
+										<label class="filter__item-label" for="seats-3">
+											3 места
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="seats-4" name="seats-4" value="seats-4" />
+										<label class="filter__item-label" for="seats-4">
+											4 места
+										</label>
+									</div>
+									<div class="filter__item">
+										<input type="checkbox" id="seats-5" name="seats-5" value="seats-5" />
+										<label class="filter__item-label" for="seats-5">
+											5 мест
+										</label>
+									</div>
+
+									<div class="filter__items filter__items-hidden">
+										<div class="filter__item">
+											<input type="checkbox" id="seats-6" name="seats-6" value="seats-6" />
+											<label class="filter__item-label" for="seats-6">
+												6 мест
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="seats-8" name="seats-8" value="seats-8" />
+											<label class="filter__item-label" for="seats-8">
+												7 мест
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="seats-8" name="seats-8" value="seats-8" />
+											<label class="filter__item-label" for="seats-8">
+												8 мест
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="seats-9" name="seats-9" value="seats-9" />
+											<label class="filter__item-label" for="seats-9">
+												9 мест
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="seats-111" name="seats-111" value="seats-111" />
+											<label class="filter__item-label" for="seats-111">
+												10 мест
+											</label>
+										</div>
+										<div class="filter__item">
+											<input type="checkbox" id="seats-11" name="seats-11" value="seats-11" />
+											<label class="filter__item-label" for="seats-11">
+												11 мест
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="filter__links">
+									<a href="#!" class="filter__link">Показать все</a>
+									<a href="#!" class="filter__link filter__link-hide">Свернуть</a>
+								</div>
+							</div>
+
+							<div class="filter-range-slider">
+								<div class="volume-range-control">
+									<!-- <label for="min-volume">Объем, л</label> -->
+									<h4 class="filter__title">Объем, л</h4>
+
+									<div class="range-slider">
+										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
+										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
+										<div class="slider-track"></div>
+									</div>
+
+									<div class="range-values">
+										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
+										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
+									</div>
+								</div>
+								<div class="volume-range-control">
+									<!-- <label for="min-volume">Объем, л</label> -->
+									<h4 class="filter__title">Объем, л</h4>
+
+									<div class="range-slider">
+										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
+										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
+										<div class="slider-track"></div>
+									</div>
+
+									<div class="range-values">
+										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
+										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
+									</div>
+								</div>
+								<div class="volume-range-control">
+									<!-- <label for="min-volume">Объем, л</label> -->
+									<h4 class="filter__title">Объем, л</h4>
+
+									<div class="range-slider">
+										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
+										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
+										<div class="slider-track"></div>
+									</div>
+
+									<div class="range-values">
+										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
+										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
+									</div>
+								</div>
+								<div class="volume-range-control">
+									<!-- <label for="min-volume">Объем, л</label> -->
+									<h4 class="filter__title">Объем, л</h4>
+
+									<div class="range-slider">
+										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
+										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
+										<div class="slider-track"></div>
+									</div>
+
+									<div class="range-values">
+										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
+										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
+									</div>
+								</div>
+								<div class="volume-range-control">
+									<!-- <label for="min-volume">Объем, л</label> -->
+									<h4 class="filter__title">Объем, л</h4>
+
+									<div class="range-slider">
+										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
+										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
+										<div class="slider-track"></div>
+									</div>
+
+									<div class="range-values">
+										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
+										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
+									</div>
+								</div>
+							</div>
+
+							<div class="filter__buttons">
+								<button class="filter__button filter__button-top">Показать 432 модели</button>
+								<button class="filter__button filter__button-bottom">Сбросить фильтры</button>
+							</div>
+						</div>
 
 						<div class="catalog__items">
 							<div class="catalog__items-titles">
@@ -814,6 +906,87 @@
 									<a href="#!" class="auto-card__title">Zeekr X</a>
 								</article>
 
+								<article class="auto-card popular-cars-card">
+									<picture>
+										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
+										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
+									</picture>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<svg class="icon icon--fav-btn">
+													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__price-wrap">
+										<p class="auto-card__price">3 686 000 ₽</p>
+										<p class="auto-card__price-old">4 095 000 ₽</p>
+									</div>
+
+									<a href="#!" class="auto-card__title">Zeekr X</a>
+								</article>
+								<article class="auto-card popular-cars-card">
+									<picture>
+										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
+										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
+									</picture>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<svg class="icon icon--fav-btn">
+													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__price-wrap">
+										<p class="auto-card__price">3 686 000 ₽</p>
+										<p class="auto-card__price-old">4 095 000 ₽</p>
+									</div>
+
+									<a href="#!" class="auto-card__title">Zeekr X</a>
+								</article>
+								<article class="auto-card popular-cars-card">
+									<picture>
+										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
+										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
+										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
+									</picture>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<svg class="icon icon--fav-btn">
+													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__price-wrap">
+										<p class="auto-card__price">3 686 000 ₽</p>
+										<p class="auto-card__price-old">4 095 000 ₽</p>
+									</div>
+
+									<a href="#!" class="auto-card__title">Zeekr X</a>
+								</article>
 								<article class="auto-card popular-cars-card">
 									<picture>
 										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />

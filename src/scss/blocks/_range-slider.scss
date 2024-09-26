@@ -1,42 +1,83 @@
-.container-range{
+.volume-range-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-range-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.range-slider {
   position: relative;
+  width: 100%;
+  height: 10px;
+
+  margin-bottom: 26px;
+}
+
+input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  appearance: none;
   pointer-events: none;
 }
 
-.container-range input[type="range"]{
-  height: 2em;
-  display: block;
-  margin: 0;
+input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
-  pointer-events: all;
-}
-
-.container-range input[type="range"]:last-child{
-  margin-top: -2em;
+  height: 6px;
+  background: transparent;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  pointer-events: all;
-}
-input[type="range"]::-moz-range-thumb {
-  pointer-events: all;
-}
-input[type="range"]::-ms-thumb {
-  pointer-events: all;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-.blocks-count {
+.slider-track {
+  position: absolute;
+  height: 6px;
+  // background-color: #ddd;
+  background: var(--secondary-grey);
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.slider-track.active {
+  background: linear-gradient(to right, #ddd calc(var(--min-value) * 100%), #007bff calc(var(--min-value) * 100%), #007bff calc(var(--max-value) * 100%), #ddd calc(var(--max-value) * 100%));
+}
+
+.range-values {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
+  width: 100%;
 }
 
-.block-count {
+.range-values #min-value,
+.range-values #max-value {
   border: 1px solid var(--secondary-grey);
+  background: var(--light-grey);
   border-radius: 8px;
   padding: 9px 8px;
   width: 138px;
   height: 40px;
-  background: var(--light-grey);
-  text-align: left;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--black);
 }
