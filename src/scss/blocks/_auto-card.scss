@@ -4,6 +4,14 @@
     width: 285px;
     height: 254px;
     padding: 10px;
+
+    transition: all .1s ease-in;
+
+    &:hover {
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+        background: var(--white);
+        border-radius: 10px;
+    }
 }
 
 .auto-card__img {

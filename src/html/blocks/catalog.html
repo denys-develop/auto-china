@@ -13,8 +13,10 @@
                     <div class="filter__items">
                         @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
 
-                        <div class="filter__items filter__items-hidden">
-                            @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
+                        <div class="filter__items-hidden">
+                            <div class="filter__items">
+                                @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
+                            </div>
                         </div>
                     </div>
                     
@@ -60,18 +62,34 @@
                         </div>
 
                         <div class="filter__items filter__items-hidden">
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="suv-5" name="suv-5" value="suv-5" />
-                                <label class="filter__item-label" for="suv-5">
-                                    Внедорожник 5 дв.
-                                </label>
-                            </div>
-
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="suv-7" name="suv-7" value="suv-7" />
-                                <label class="filter__item-label" for="suv-7">
-                                    Внедорожник 7 дв.
-                                </label>
+                            <div class="filter__items">
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="turbo" name="turbo" value="turbo" />
+                                    <label class="filter__item-label" for="turbo">
+                                        Турбированный
+                                    </label>
+                                </div>
+    
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="atmospheric" name="atmospheric" value="atmospheric" />
+                                    <label class="filter__item-label" for="atmospheric">
+                                        Атмосферный
+                                    </label>
+                                </div>
+    
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="suv-5" name="suv-5" value="suv-5" />
+                                    <label class="filter__item-label" for="suv-5">
+                                        Внедорожник 5 дв.
+                                    </label>
+                                </div>
+    
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="suv-7" name="suv-7" value="suv-7" />
+                                    <label class="filter__item-label" for="suv-7">
+                                        Внедорожник 7 дв.
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,20 +160,21 @@
                             </label>
                         </div>
                       
+                        <div class="filter__items-hidden">
+                            <div class="filter__items">
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="turbo" name="turbo" value="turbo" />
+                                    <label class="filter__item-label" for="turbo">
+                                        Турбированный
+                                    </label>
+                                </div>
 
-                        <div class="filter__items filter__items-hidden">
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="turbo" name="turbo" value="turbo" />
-                                <label class="filter__item-label" for="turbo">
-                                    Турбированный
-                                </label>
-                            </div>
-
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="atmospheric" name="atmospheric" value="atmospheric" />
-                                <label class="filter__item-label" for="atmospheric">
-                                    Атмосферный
-                                </label>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="atmospheric" name="atmospheric" value="atmospheric" />
+                                    <label class="filter__item-label" for="atmospheric">
+                                        Атмосферный
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -239,42 +258,44 @@
                             </label>
                         </div>
                     
-                        <div class="filter__items filter__items-hidden">
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-6" name="seats-6" value="seats-6" />
-                                <label class="filter__item-label" for="seats-6">
-                                    6 мест
-                                </label>
-                            </div>
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-8" name="seats-8" value="seats-8" />
-                                <label class="filter__item-label" for="seats-8">
-                                    7 мест
-                                </label>
-                            </div>
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-8" name="seats-8" value="seats-8" />
-                                <label class="filter__item-label" for="seats-8">
-                                    8 мест
-                                </label>
-                            </div>
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-9" name="seats-9" value="seats-9" />
-                                <label class="filter__item-label" for="seats-9">
-                                    9 мест
-                                </label>
-                            </div>
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-111" name="seats-111" value="seats-111" />
-                                <label class="filter__item-label" for="seats-111">
-                                    10 мест
-                                </label>
-                            </div>
-                            <div class="filter__item">
-                                <input type="checkbox" class="filter-checkbox" id="seats-11" name="seats-11" value="seats-11" />
-                                <label class="filter__item-label" for="seats-11">
-                                    11 мест
-                                </label>
+                        <div class="filter__items-hidden">
+                            <div class="filter__items">
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-6" name="seats-6" value="seats-6" />
+                                    <label class="filter__item-label" for="seats-6">
+                                        6 мест
+                                    </label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-8" name="seats-8" value="seats-8" />
+                                    <label class="filter__item-label" for="seats-8">
+                                        7 мест
+                                    </label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-8" name="seats-8" value="seats-8" />
+                                    <label class="filter__item-label" for="seats-8">
+                                        8 мест
+                                    </label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-9" name="seats-9" value="seats-9" />
+                                    <label class="filter__item-label" for="seats-9">
+                                        9 мест
+                                    </label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-111" name="seats-111" value="seats-111" />
+                                    <label class="filter__item-label" for="seats-111">
+                                        10 мест
+                                    </label>
+                                </div>
+                                <div class="filter__item">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-11" name="seats-11" value="seats-11" />
+                                    <label class="filter__item-label" for="seats-11">
+                                        11 мест
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -286,10 +307,6 @@
                 </div>
 
                 <div class="filter-range-slider">
-                    @@include('catalog-filter/range-slider.html')
-                    @@include('catalog-filter/range-slider.html')
-                    @@include('catalog-filter/range-slider.html')
-                    @@include('catalog-filter/range-slider.html')
                     @@include('catalog-filter/range-slider.html')
                 </div>
 
@@ -345,8 +362,18 @@
                     @@include('blocks/popular-cars-card.html')
                     @@include('blocks/popular-cars-card.html')
                 </div>
+
+                <div class="catalog__item-count">
+                    <div class="catalog__item-count-text">Выводить по:</div>
+
+                    <div class="catalog__item-count-number">
+                        <div class="catalog__item-count-num catalog__item-count-num--active">10</div>
+                        <div class="catalog__item-count-num">20</div>
+                        <div class="catalog__item-count-num">50</div>
+                        <div class="catalog__item-count-num">100</div>
+                    </div>
+                </div>
             </div>
-            
-        </div>
+        </div>  
      </div>
 </section>

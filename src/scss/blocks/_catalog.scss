@@ -55,3 +55,46 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+// Catalog Item Count
+.catalog__item-count {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 24px;
+    justify-content: flex-end;
+}
+
+.catalog__item-count-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--black);
+}
+
+.catalog__item-count-number {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.catalog__item-count-num {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--light-blue);
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.catalog__item-count-num--active {
+    color: var(--black);
+}
