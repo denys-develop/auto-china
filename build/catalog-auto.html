@@ -587,28 +587,61 @@
 								</div>
 
 								<div class="catalog__items-icons">
-									<div class="catalog__items-icon">
-										<img src="./img/catalog/sort1.svg" alt="" />
+									<div class="catalog__items-icon-tile">
+										<svg class="catalog__items-icon-tile-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M4 3C3.44772 3 3 3.44772 3 4V10C3 10.5523 3.44772 11 4 11H10C10.5523 11 11 10.5523 11 10V4C11 3.44772 10.5523 3 10 3H4Z" />
+											<path d="M13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V10C21 10.5523 20.5523 11 20 11H14C13.4477 11 13 10.5523 13 10V4Z" />
+											<path
+												d="M14 13C13.4477 13 13 13.4477 13 14V20C13 20.5523 13.4477 21 14 21H20C20.5523 21 21 20.5523 21 20V14C21 13.4477 20.5523 13 20 13H14Z"
+											/>
+											<path d="M3 14C3 13.4477 3.44772 13 4 13H10C10.5523 13 11 13.4477 11 14V20C11 20.5523 10.5523 21 10 21H4C3.44772 21 3 20.5523 3 20V14Z" />
+										</svg>
 									</div>
-									<div class="catalog__items-icon">
-										<img src="./img/catalog/sort2.svg" alt="" />
+
+									<div class="catalog__items-icon-row">
+										<svg class="catalog__items-icon-row-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="3" y="17" width="4" height="4" rx="1" />
+											<rect x="3" y="10" width="4" height="4" rx="1" />
+											<rect x="3" y="3" width="4" height="4" rx="1" />
+											<rect x="9" y="17" width="12" height="4" rx="1" />
+											<rect x="9" y="10" width="12" height="4" rx="1" />
+											<rect x="9" y="3" width="12" height="4" rx="1" />
+										</svg>
 									</div>
 								</div>
 							</div>
 
 							<div class="catalog__item">
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -617,25 +650,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -644,25 +704,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -671,25 +758,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -698,25 +812,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -725,25 +866,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -752,25 +920,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -779,25 +974,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -806,25 +1028,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -833,25 +1082,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -860,25 +1136,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -887,25 +1190,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 								<article class="auto-card new-cars-card">
-									<picture>
-										<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
-									</picture>
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -914,26 +1244,53 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old"></p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -942,25 +1299,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -969,25 +1353,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -996,25 +1407,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1023,25 +1461,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1050,25 +1515,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1077,25 +1569,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1104,25 +1623,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1131,25 +1677,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1158,25 +1731,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1185,25 +1785,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1212,25 +1839,52 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
-									</div>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
-								<article class="auto-card popular-cars-card">
-									<picture>
-										<source srcset="./img/popular-cars/popular-cars01.webp 1x, ./img/popular-cars/popular-cars01@2x.webp 2x" type="image/webp" />
-										<source srcset="./img/popular-cars/popular-cars01.jpg 1x, ./img/popular-cars/popular-cars01@2x.jpg 2x" type="image/jpeg" />
-										<img class="auto-card__img" src="./img/popular-cars/popular-cars01.jpg" alt="cars" />
-									</picture>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
 
 									<div class="favorite-btn">
 										<div class="fav-btn">
 											<button class="btn-favorite">
-												<svg class="icon icon--fav-btn">
-													<use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
 												</svg>
 											</button>
 										</div>
@@ -1239,12 +1893,780 @@
 										</div>
 									</div>
 
-									<div class="auto-card__price-wrap">
-										<p class="auto-card__price">3 686 000 ₽</p>
-										<p class="auto-card__price-old">4 095 000 ₽</p>
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+							</div>
+
+							<div class="catalog__item-2">
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
 									</div>
 
-									<a href="#!" class="auto-card__title">Zeekr X</a>
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/new-cars/01.webp 1x, ./img/new-cars/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/new-cars/01.jpg 1x, ./img/new-cars/01@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/new-cars/01.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old"></p>
+										</div>
+
+										<a href="#!" class="auto-card__title">Zeekr X</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
+								</article>
+								<article class="auto-card new-cars-card">
+									<div class="auto-card__imege">
+										<picture>
+											<source srcset="./img/popular-cars/02.webp 1x, ./img/popular-cars/02@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/popular-cars/02.jpg 1x, ./img/popular-cars/02@2x.jpg 2x" type="image/jpeg" />
+											<img class="auto-card__img" src="./img/popular-cars/02.jpg" alt="cars" />
+										</picture>
+									</div>
+
+									<div class="favorite-btn">
+										<div class="fav-btn">
+											<button class="btn-favorite">
+												<!-- <svg class="icon icon--fav-btn">
+            <use class="fav-icon" href="./img/svgsprite/sprite.symbol.svg#fav-btn"></use>
+        </svg> -->
+
+												<svg class="icon-favorite-btn" width="24" height="24" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.2969 21.4569L17 21.7694V21V3.22222C17 2.48336 16.7413 1.8353 
+            16.2313 1.30546L16.2307 1.30485C15.7192 0.775335 
+            15.0859 0.5 14.3571 0.5H3.64286C2.91403 0.5 2.28094 0.775369 1.77008 1.30515C1.25922 1.83494 
+            1 2.4831 1 3.22222V21V21.7694L1.70307 21.4569L9 18.2138L16.2969
+            21.4569ZM14.5 17.9225L9.20307 15.5683L9 15.478L8.79693 15.5683L3.5 
+            17.9225V3.22222C3.5 3.15545 3.50899 3.12777 3.51359 3.11632C3.51799 
+            3.10538 3.5289 3.08279 3.56969 3.04049C3.59188 3.01747 3.60587 3.00619 
+            3.61263 3.00131C3.61783 3.00072 3.62737 3 3.64286 3H14.3571C14.3733 3 14.383 
+            3.00079 14.3881 3.00139C14.3947 3.00607 14.4088 3.01722 14.4314 3.04047C14.471 3.08191 14.4818 3.10422 14.4863 
+            3.11533C14.491 3.12709 14.5 3.15517 14.5 3.22222V17.9225ZM14.3836 2.9985C14.3836 2.99848 14.3839 2.99865 14.3846 
+            2.99907L14.3836 2.9985ZM3.6175 2.99812C3.61749 2.99814 3.61715 2.99835 3.6165 2.99869L3.6175 2.99812Z"
+													/>
+												</svg>
+											</button>
+										</div>
+										<div class="fav-btn-modal">
+											<p class="fav-btn-modal__desc">Добавлено в&#160;<span>Избранное</span></p>
+										</div>
+									</div>
+
+									<div class="auto-card__text">
+										<div class="auto-card__price-wrap">
+											<p class="auto-card__price">3 686 000 ₽</p>
+											<p class="auto-card__price-old">4 300 000₽</p>
+										</div>
+
+										<a href="#!" class="auto-card__title">CHERY Tiggo 7 Pro Max Рестайлинг Новая Версия 2024</a>
+
+										<div class="auto-card__desc">
+											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
+											<p class="auto-card__desc-card">Коробка передач: <span>Робот</span></p>
+											<p class="auto-card__desc-card">Расход топлива: <span>9,9л. (100&#160;км)</span></p>
+											<p class="auto-card__desc-card">Тип топлива: <span>бензин</span></p>
+										</div>
+									</div>
 								</article>
 							</div>
 

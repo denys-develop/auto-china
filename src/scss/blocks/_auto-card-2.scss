@@ -1,0 +1,80 @@
+.catalog__item-2 > .auto-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 20px;
+    width: 100%;
+    // height: 200px;
+    height: 100%;
+}
+
+
+.catalog__item-2 > .auto-card > .auto-card__imege {
+    width: 235px;
+    height: 160px;
+    border-radius: unset;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__imege > .auto-card__img  {
+    width: 100%;
+    height: 100%;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__price-wrap > .auto-card__price-old {
+    display: block;
+}
+
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__desc {
+    display: block;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__text {
+   display: flex;
+   flex-direction: column;
+
+   gap: 16px;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__title {
+   order: -1;
+
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 120%;
+}
+
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__price-wrap > .auto-card__price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__price-wrap >.auto-card__price-old {
+    display: block;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__desc {
+   display: flex;
+   flex-direction: column;
+   gap: 1px;
+}
+
+.catalog__item-2 > .auto-card > .auto-card__text > .auto-card__desc > .auto-card__desc-card {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--grey);
+
+    span {
+        color: var(--black);
+    }
+}
+

@@ -21,11 +21,6 @@
     height: 32px;
 }
 
-// .icon--search.active {
-// 	stroke: var(--grey);
-// }
-
-
 .icon--favorite {
 	fill: var(--white);
 }
@@ -34,13 +29,11 @@
 	fill: var(--blue);
 }
 
-// .icon--favorite.active {
-// 	fill: var(--blue);
-// }
 
 .icon--fav-btn {
 	fill:  var(--white);
 	stroke: var(--grey);
+	stroke-width: 0.7px;
 } 
 
 .icon--vk {

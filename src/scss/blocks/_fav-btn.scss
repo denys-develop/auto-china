@@ -5,13 +5,21 @@
     z-index: 10;        
 }
 
-.btn-favorite {
-    &--selected .icon--fav-btn {  // если есть у кнопки модификатор  &--selected то иконка выбирается 
-        stroke:  var(--white);  
-        fill: var(--red);
+.icon-favorite-btn {
+    fill:  var(--white);
+	stroke: var(--grey);
+	stroke-width: 0.6px;
 
-        &:hover {
-            stroke:  var(--white); // когда выбрана иконка что бы не работал другой цвет ховера
-        }
+    transition: fill .2s ease-in;
+
+    &:hover {
+        fill:  var(--red);
     }
 }
+
+// .btn-favorite {
+//     &--selected .icon--fav-btn {  // если есть у кнопки модификатор  &--selected то иконка выбирается 
+//         stroke:  var(--white);  
+//         fill: var(--red);
+//     }
+// }

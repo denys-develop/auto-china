@@ -40,21 +40,71 @@
     color: var(--black);
 }
 
+// Catalog Items Icons Tile and Row 
 .catalog__items-icons {
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.catalog__items-icon {
+.catalog__items-icon-tile {
     cursor: pointer;
+    transition: transform .2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
+.catalog__items-icon-tile-svg {
+    fill: #888888;
+}
+
+.catalog__items-icon-tile > .catalog__items-icon-tile-svg {
+    transition: fill .2s ease-in;
+    &:hover {
+        fill: var(--black);
+    }
+}
+
+.catalog__items-icon-row {
+    cursor: pointer;
+    transition: transform .2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.catalog__items-icon-row-svg {
+    fill: #888888;
+}
+
+.catalog__items-icon-row > .catalog__items-icon-row-svg {
+    transition: fill .2s ease-in;
+    &:hover {
+        fill: var(--black);
+    }
+}
+
+// -------- END --------
+
+// Отобображение карточек машин плитка и ряд
 .catalog__item {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    display: none;
 }
+
+.catalog__item-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+// -------- END --------
 
 // Catalog Item Count
 .catalog__item-count {

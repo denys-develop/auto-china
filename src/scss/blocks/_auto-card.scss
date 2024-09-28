@@ -2,7 +2,8 @@
     position: relative;
 
     width: 285px;
-    height: 254px;
+    // height: 254px;
+    height: 100%;
     padding: 10px;
 
     transition: all .1s ease-in;
@@ -14,8 +15,16 @@
     }
 }
 
-.auto-card__img {
+.auto-card__imege {
+    width: 265px;
+    height: 180px;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.auto-card__img {
+    width: 100%;
+    height: 100%;
 }
 
 .auto-card__price-wrap {
@@ -43,6 +52,8 @@
     line-height: 120%;
     text-decoration: line-through;
     color: var(--grey);
+
+    display: none;
 }
 
 
@@ -70,4 +81,8 @@
         height: 100%;
         z-index: 8;
     }
+}
+
+.auto-card__desc {
+    display: none;
 }
