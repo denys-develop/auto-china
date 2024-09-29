@@ -3,9 +3,39 @@
     padding-bottom: 80px;
 }
 
-.catalog__title {
-    padding-top: 24px;
+// Catalog Navigation
+.catalog__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 24px;
+    margin-bottom: 32px;
 }
+
+.catalog__nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: var(--light-blue)
+    }
+}
+
+.catalog__nav-head {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+}
+// -------- END --------
 
 .catalog__row {
     display: grid;

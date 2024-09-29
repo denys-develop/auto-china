@@ -81,6 +81,12 @@
 		<main>
 			<section class="catalog">
 				<div class="container">
+					<div class="catalog__nav">
+						<a class="catalog__nav-link" href="index.html">Главная</a>
+						<img class="catalog__nav-svg" src="./img/icons/arrow.svg" alt="arrow" />
+						<p class="catalog__nav-head">Каталог автомобилей</p>
+					</div>
+
 					<div class="block-title catalog__title">
 						<h2 class="title">Каталог автомобилей</h2>
 					</div>
@@ -510,66 +516,6 @@
 										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
 									</div>
 								</div>
-								<div class="volume-range-control">
-									<!-- <label for="min-volume">Объем, л</label> -->
-									<h4 class="filter__title">Мощность, л.&#160;с.</h4>
-
-									<div class="range-slider">
-										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
-										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
-										<div class="slider-track"></div>
-									</div>
-
-									<div class="range-values">
-										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
-										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
-									</div>
-								</div>
-								<div class="volume-range-control">
-									<!-- <label for="min-volume">Объем, л</label> -->
-									<h4 class="filter__title">Разгон, с</h4>
-
-									<div class="range-slider">
-										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
-										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
-										<div class="slider-track"></div>
-									</div>
-
-									<div class="range-values">
-										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
-										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
-									</div>
-								</div>
-								<div class="volume-range-control">
-									<!-- <label for="min-volume">Объем, л</label> -->
-									<h4 class="filter__title">Год</h4>
-
-									<div class="range-slider">
-										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
-										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
-										<div class="slider-track"></div>
-									</div>
-
-									<div class="range-values">
-										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
-										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
-									</div>
-								</div>
-								<div class="volume-range-control">
-									<!-- <label for="min-volume">Объем, л</label> -->
-									<h4 class="filter__title">Цена, ₽</h4>
-
-									<div class="range-slider">
-										<input type="range" id="min-volume" min="0.2" max="4.5" step="0.1" value="0.2" oninput="updateRange(this.value, 'min')" />
-										<input type="range" id="max-volume" min="0.2" max="4.5" step="0.1" value="4.5" oninput="updateRange(this.value, 'max')" />
-										<div class="slider-track"></div>
-									</div>
-
-									<div class="range-values">
-										<input type="number" id="min-value" value="0.2" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'min')" />
-										<input type="number" id="max-value" value="4.5" step="0.1" min="0.2" max="4.5" oninput="updateInputValue(this.value, 'max')" />
-									</div>
-								</div>
 							</div>
 
 							<div class="filter__buttons">
@@ -656,7 +602,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -710,7 +656,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -764,7 +710,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -818,7 +764,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -872,7 +818,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -926,7 +872,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -980,7 +926,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1034,7 +980,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1088,7 +1034,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1142,7 +1088,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1196,7 +1142,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1250,7 +1196,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -1956,7 +1902,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2064,7 +2010,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2172,7 +2118,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2280,7 +2226,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2388,7 +2334,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2496,7 +2442,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>
@@ -2604,7 +2550,7 @@
 											<p class="auto-card__price-old"></p>
 										</div>
 
-										<a href="#!" class="auto-card__title">Zeekr X</a>
+										<a href="catalog-card.html" class="auto-card__title">Zeekr X</a>
 
 										<div class="auto-card__desc">
 											<p class="auto-card__desc-card">Привод: <span>4WD</span></p>

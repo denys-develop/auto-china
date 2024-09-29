@@ -1,0 +1,251 @@
+.card {
+    padding-top: 124px;
+    padding-bottom: 80px;
+}
+
+.card__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    margin-bottom: 80px;
+}
+
+.card__imege {
+    max-width: 774px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__img-1 {
+    border-radius: 16px;
+    width: 774px;
+    height: 462px;
+    background-color: #9f9f9f;
+}
+
+.card__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+ 
+    justify-content: center;
+    gap: 8px;
+}
+
+.card__img-2 {
+    border-radius: 4px;
+    width: 84px;
+    height: 50px;
+    background-color: #9f9f9f;
+}
+
+
+.card__main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+// Card Main Top
+.card__main-top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 386px;
+    // height: 100%;
+
+    box-shadow: 0 0 20px 0 rgba(8, 50, 96, 0.15);
+    background: var(--white);
+}
+
+.card__main-title {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
+
+.card__main-prices {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card__main-price {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.card__main-price-old {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
+.card__main-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__main-favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    border-radius: 8px;
+    padding: 10px;
+    width: 338px;
+    height: 48px;
+    background-color: var(--light-grey);
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--black);
+
+    transition: border .1s ease-in;
+
+    &::before {
+        content: "";
+
+        display: block;
+        width: 17px;
+        height: 23px;
+
+        background-image: url('./../../img/icons/favorite-02.svg');
+        background-position: center center; /* x y */
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &:hover {
+        border: 2px solid var(--light-blue);
+    }
+}
+
+.card__main-request {
+    border-radius: 8px;
+    padding: 10px 16px;
+    width: 338px;
+    height: 48px;
+    background: var(--light-blue);
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--white);
+
+    transition: opacity .2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// ------- END -------
+
+
+// Card Main Bottom
+.card__main-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__main-desc {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.card__main-desc-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.card__main-desc-wrap-left {
+    display: block;
+    width: 232px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--grey);
+}
+
+.card__main-desc-wrap-right {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+}
+
+.card__main-desc-link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--light-blue);
+
+    transition: opacity .2s ease-in;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+// ------- END -------
+
+// Card Text
+.card__text {
+
+    p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: var(--black);
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+.card__text-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--black);
+
+    margin-bottom: 16px;
+}
+
+// ------- END -------
