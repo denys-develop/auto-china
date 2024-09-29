@@ -164,11 +164,13 @@
 // ------- END -------
 
 
-// Card Main Bottom
+// Card Main Bottom Description
 .card__main-description {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+
 }
 
 .card__main-desc {
@@ -224,6 +226,7 @@
 
 // Card Text
 .card__text {
+    max-width: 774px;
 
     p {
         font-family: var(--font-family);
@@ -246,6 +249,108 @@
     color: var(--black);
 
     margin-bottom: 16px;
+}
+
+// ------- END -------
+
+// Card Specifications
+.card__specific {
+    max-width: 774px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.card__specific-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--black);
+
+    margin-bottom: 24px;
+}
+
+.card__specific-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card__specific-items {
+    max-width: 375px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card__specific-subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.card__specific-item {
+    display: flex;
+    gap: 24px;  
+    justify-content: flex-start;
+}
+
+.card__specific-item-left {
+   width: 232px;
+
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 140%;
+   color: var(--grey);
+}
+
+.card__specific-item-right {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+}
+// ------- END -------
+
+// Card Equipment
+.card__equip {
+    max-width: 774px;
+}
+
+.card__equip__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--black);
+
+    margin-bottom: 16px;
+}
+
+.card__equip-wrap {
+    display: flex;
+    gap: 24px;
+}
+
+.card__equip-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card__equip-item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+    list-style: inside;
 }
 
 // ------- END -------

@@ -14,8 +14,6 @@ swiperSlider();
 import filterSlider from './modules/filter-slider.js';
 filterSlider(); 
 
-
-
 // Filter Hidden
 import filterHidden from './modules/filter-hidden.js';
 filterHidden();
@@ -23,7 +21,3 @@ filterHidden();
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
-
-
-
-// Catalog count items
