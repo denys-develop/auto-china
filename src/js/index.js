@@ -11,7 +11,7 @@ import swiperSlider from './modules/swiper.js';
 swiperSlider();
 
 // Filter-slider
-import filterSlider from './modules/filter-slider.js';
+import filterSlider from './modules/filter-range-slider.js';
 filterSlider(); 
 
 // Filter Hidden
