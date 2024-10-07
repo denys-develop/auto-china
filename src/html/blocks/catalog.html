@@ -16,11 +16,11 @@
                     <h4 class="filter__title">Марки</h4>
 
                     <div class="filter__items">
-                        @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
+                        @@loop('catalog/filter-brands.html','blocks/data/filter-brands.json')
 
                         <div class="filter__items-hidden">
                             <div class="filter__items">
-                                @@loop('catalog-filter/filter-brands.html','blocks/data/filter-brands.json')
+                                @@loop('catalog/filter-brands.html','blocks/data/filter-brands.json')
                             </div>
                         </div>
                     </div>
@@ -272,8 +272,8 @@
                                     </label>
                                 </div>
                                 <div class="filter__item">
-                                    <input type="checkbox" class="filter-checkbox" id="seats-8" name="seats-8" value="seats-8" />
-                                    <label class="filter__item-label" for="seats-8">
+                                    <input type="checkbox" class="filter-checkbox" id="seats-7" name="seats-8" value="seats-7" />
+                                    <label class="filter__item-label" for="seats-7">
                                         7 мест
                                     </label>
                                 </div>
@@ -312,7 +312,7 @@
                 </div>
 
                 <div class="filter-range-slider">
-                    @@include('catalog-filter/range-slider.html')
+                    @@include('catalog/range-slider.html')
                 </div>
 
                 <div class="filter__buttons">
@@ -330,16 +330,16 @@
                     </div>
 
                     <div class="catalog__items-icons">
-                        <div class="catalog__items-icon-tile">
-                            <svg class="catalog__items-icon-tile-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="catalog__items-icon-tile">
+                            <svg class="catalog__items-icon-tile-svg scale" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 3C3.44772 3 3 3.44772 3 4V10C3 10.5523 3.44772 11 4 11H10C10.5523 11 11 10.5523 11 10V4C11 3.44772 10.5523 3 10 3H4Z" />
                                 <path d="M13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V10C21 10.5523 20.5523 11 20 11H14C13.4477 11 13 10.5523 13 10V4Z" />
                                 <path d="M14 13C13.4477 13 13 13.4477 13 14V20C13 20.5523 13.4477 21 14 21H20C20.5523 21 21 20.5523 21 20V14C21 13.4477 20.5523 13 20 13H14Z" />
                                 <path d="M3 14C3 13.4477 3.44772 13 4 13H10C10.5523 13 11 13.4477 11 14V20C11 20.5523 10.5523 21 10 21H4C3.44772 21 3 20.5523 3 20V14Z" />
                             </svg>
-                        </div>
+                        </button>
 
-                        <div class="catalog__items-icon-row">
+                        <button class="catalog__items-icon-row">
                             <svg class="catalog__items-icon-row-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3" y="17" width="4" height="4" rx="1" />
                                 <rect x="3" y="10" width="4" height="4" rx="1" />
@@ -348,35 +348,26 @@
                                 <rect x="9" y="10" width="12" height="4" rx="1" />
                                 <rect x="9" y="3" width="12" height="4" rx="1" />
                             </svg>
-                        </div>
+                        </button>
                     </div>
                 </div>
 
                 <div class="catalog__item">
                     @@include('blocks/new-cars-card.html')
+                    @@include('blocks/popular-cars-card.html')
+                    @@include('blocks/new-cars-card.html')
+                    @@include('blocks/popular-cars-card.html')
+                    @@include('blocks/new-cars-card.html')
+                    @@include('blocks/popular-cars-card.html')
+                    @@include('blocks/new-cars-card.html')
+                    @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
                     @@include('blocks/new-cars-card.html')
+                    @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
-                    @@include('blocks/new-cars-card.html')
-                    @@include('blocks/new-cars-card.html')
-                    @@include('blocks/new-cars-card.html')
-                    @@include('blocks/new-cars-card.html')
-                    @@include('blocks/new-cars-card.html')
-        
-
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
-         
                 </div>
 
-                <div class="catalog__item-2">
+                <div class="catalog__item-2 hide">
                     @@include('blocks/new-cars-card.html')
                     @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
@@ -386,23 +377,22 @@
                     @@include('blocks/new-cars-card.html')
                     @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
                     @@include('blocks/popular-cars-card.html')
                     @@include('blocks/new-cars-card.html')
-                    @@include('blocks/popular-cars-card.html')
                 </div>
 
                 <div class="catalog__item-count">
                     <div class="catalog__item-count-text">Выводить по:</div>
-
+                
                     <div class="catalog__item-count-number">
-                        <div class="catalog__item-count-num catalog__item-count-num--active">10</div>
-                        <div class="catalog__item-count-num">20</div>
-                        <div class="catalog__item-count-num">50</div>
-                        <div class="catalog__item-count-num">100</div>
+                        <div class="catalogitem-count-num catalogitem-count-num--active" data-count="12">12</div>
+                        <div class="catalog__item-count-num" data-count="24">24</div>
+                        <div class="catalog__item-count-num" data-count="50">50</div>
+                        <div class="catalog__item-count-num" data-count="100">100</div>
                     </div>
                 </div>
+
             </div>
         </div>  
 

@@ -80,10 +80,6 @@
 .catalog__items-icon-tile {
     cursor: pointer;
     transition: transform .2s ease-in;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 }
 
 .catalog__items-icon-tile-svg {
@@ -97,13 +93,14 @@
     }
 }
 
+.catalog__items-icon-tile-svg.scale {
+    transform: scale(1.1);
+    fill: var(--black);
+}
+
 .catalog__items-icon-row {
     cursor: pointer;
     transition: transform .2s ease-in;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 }
 
 .catalog__items-icon-row-svg {
@@ -117,6 +114,12 @@
     }
 }
 
+.catalog__items-icon-row-svg.scale {
+    transform: scale(1.1);
+    fill: var(--black);
+}
+
+
 // -------- END --------
 
 // Отобображение карточек машин плитка и ряд
@@ -124,15 +127,19 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
 
-   
+.catalog__item.hide {
+    display: none;
 }
 
 .catalog__item-2 {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
 
+.catalog__item-2.hide {
     display: none;
 }
 
