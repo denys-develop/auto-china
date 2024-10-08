@@ -203,13 +203,14 @@ gulp.task('files:dev', function () {
 
 gulp.task('js:dev', function () {
 	return gulp
-		.src('./src/js/*.js')
-		.pipe(changed('./build/js/'))
-		.pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
-		.pipe(webpack(require('./../webpack.config.js')))
-		.pipe(gulp.dest('./build/js/'));
+		.src('./src/js/*.js')                     // Указывает на исходные файлы .js, которые находятся в папке ./src/js/
+		.pipe(changed('./build/js/'))              // Проверяет, были ли изменены файлы, чтобы не пересобирать те, которые не изменились (оптимизация).
+		.pipe(plumber(plumberNotify('JS')))        // Предотвращает остановку задачи при ошибке и выводит уведомления об ошибках.
+		// .pipe(babel())                          // преобразование с использованием Babel, который транскомпилирует ES6+ в совместимый с ES5 код.
+		.pipe(webpack(require('./../webpack.config.js'))) // Использует Webpack для обработки JavaScript файлов с настройками, указанными в файле webpack.config.js.
+		.pipe(gulp.dest('./build/js/'));           // Помещает результат сборки в папку ./build/js/.
 });
+
 
 const serverOptions = {
 	livereload: true,
