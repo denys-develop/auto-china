@@ -8,18 +8,21 @@
 .icon-favorite-btn {
     fill:  var(--white);
 	stroke: var(--grey);
-	stroke-width: 0.6px;
+	stroke-width: 1px;
 
-    transition: fill .2s ease-in;
+    transition: stroke .2s ease-in;
 
     &:hover {
-        fill:  var(--red);
+        stroke:  var(--red);
     }
 }
 
-// .btn-favorite {
-//     &--selected .icon--fav-btn {  // если есть у кнопки модификатор  &--selected то иконка выбирается 
-//         stroke:  var(--white);  
-//         fill: var(--red);
-//     }
-// }
+.btn-favorite {
+    &--selected .icon-favorite-btn  {  // если есть у кнопки модификатор  &--selected то иконка выбирается 
+        stroke:  var(--white);  
+        fill: var(--red);
+    }
+}
+
+
+

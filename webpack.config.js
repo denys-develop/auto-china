@@ -6,7 +6,7 @@ const config = {
 		card: './src/js/card.js'  // Точка входа для card.js
 	},
 	output: {
-		filename: '[name].bundle.js',  // [name] будет заменён на 'index' и 'catalog'
+		filename: '[name].bundle.js',  // [name] будет заменён на 'index' и 'catalog' и 'card'
 	},
 	module: {
 		rules: [

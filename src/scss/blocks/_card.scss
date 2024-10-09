@@ -25,14 +25,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    max-height: 462px;
+    min-height: 462px;
     border-radius: 16px;
     overflow: hidden;
 }
 
 .card__img-1 img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     border-radius: 16px;
 }
 
@@ -57,11 +58,15 @@
     width: 100%;
     height: auto;
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: transform 0.2s ease-in;
 }
 
 .card__img-2 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+}
+
+.card__img-2 .active {
+    border: 4px solid var(--light-blue); 
 }
 
 

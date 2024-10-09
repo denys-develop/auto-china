@@ -10,6 +10,10 @@ brandsHidden();
 import swiperSlider from './modules/swiper.js';
 swiperSlider();
 
+// Button favorite
+import btnFav from './modules/btn-fav.js';
+btnFav();
+
 // // Мобильная навигация
 // import mobileNav from './modules/mobile-nav.js';
 // mobileNav();

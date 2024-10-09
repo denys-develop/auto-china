@@ -10,7 +10,6 @@ catalogCardsList();
 import filterSlider from './modules/filter-range-slider.js';
 filterSlider(); 
 
-
 // Filter Hidden
 import filterHidden from './modules/filter-hidden.js';
 filterHidden();

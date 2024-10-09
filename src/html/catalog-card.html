@@ -21,22 +21,32 @@
 	
 
 	@@include('blocks/footer.html')
-	<script src="./js/index.bundle.js"></script>
-
-	<!-- <script>
-		function changeImage(element, webpSrc, jpgSrc) {
-			const mainImageWebp = document.getElementById('main-image-webp');
-			const mainImageJpg = document.getElementById('main-image-jpg');
-			const mainImage = document.getElementById('main-image');
+	<script src="./js/card.bundle.js"></script>
 
 
-			mainImageWebp.srcset = `${webpSrc} 1x, ${webpSrc.replace('.webp', '@2x.webp')} 2x`;
-			mainImageJpg.srcset = `${jpgSrc} 1x, ${jpgSrc.replace('.jpg', '@2x.jpg')} 2x`;
+	<!-- Код не работает внутри сборки card.js -->
+	<script>
+		function changeImage(element) {
+			const largeImage = document.getElementById('large-image');
+			const smallImage = element.cloneNode(true); 
 
-		
-			mainImage.src = element.src;
-		}
-	</script> -->
+			largeImage.innerHTML = smallImage.outerHTML;
+
+			const smallImages = document.querySelectorAll('.card__img-2');
+
+			smallImages.forEach(card => {
+				const pictureElement = card.querySelector('picture');
+				if (pictureElement) {
+					const img = pictureElement.querySelector('img');
+					if (img) {
+						img.classList.remove('active');
+					}
+				}
+			});
+			
+			element.classList.add('active');
+        }
+	</script>
 </body>
 
 </html>

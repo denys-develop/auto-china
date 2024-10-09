@@ -6,7 +6,7 @@ function btnFav() {
         card.addEventListener("click", (e) => {
             const btnFavor = card.querySelector(".btn-favorite");
         
-            if (e.target.classList.contains('fav-icon')) {
+            if (e.target.classList.contains('icon-favorite-btn')) {
                 const btnFavModal = card.querySelector(".fav-btn-modal");
 
                 btnFavor.classList.toggle('btn-favorite--selected');
