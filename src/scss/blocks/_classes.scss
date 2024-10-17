@@ -1,12 +1,20 @@
 .classes {
     padding: 40px 0;
+
+    @include mobile {
+        padding: 20px 0;
+    }
 }
 
 
 .classes__row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+   
+    @include mobile {
+        gap: 8px;
+    }
 }

@@ -4,6 +4,7 @@
 	width: 100%;
 
 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 // Header Top
@@ -11,6 +12,10 @@
 	padding: 7.5px 0;
     background: var(--blue);
 	border-bottom: 1px solid var(--black);
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .nav__list2 {
@@ -34,8 +39,13 @@
 
 // Header Bottom
 .header-bottom2 {
-	padding: 20px;
+	padding: 20px 0;
 	background: var(--white);
+
+	
+	@include mobile {
+		padding: 16px 0;
+	}
 }
 
 .header__info2 {
@@ -51,6 +61,10 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .catalog-btn {
@@ -108,6 +122,10 @@
 	text-align: right;
 	font-family: var(--font-family);
 	line-height: 120%;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .header__tel2 {
@@ -132,5 +150,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@include mobile {
+		display: none;
+	}
 }
 
+
+
+.header__info-search2 {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}

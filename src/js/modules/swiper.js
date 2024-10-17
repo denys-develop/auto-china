@@ -1,26 +1,29 @@
-  // SWIPER Slider
+// SWIPER Slider
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 function swiperSlider() {
-  const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 8, 
- 
+  let swiper = new Swiper(".mySwiper", {
+    // slidesPerView: 1,
+    // spaceBetween: 8,
+
+    slidesPerView: "auto",
+    spaceBetween: 8,
 
     breakpoints: {
-      780: {
-      slidesPerView: 1,
-      spaceBetween: 16,
-      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      }
     },
 
-    breakpoints: {
-      920: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      },
-    }
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   dynamicBullets: true,
+    // },
+
+
+
   });
 }
 

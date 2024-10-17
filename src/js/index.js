@@ -2,7 +2,7 @@
 import headerFixed from './modules/header-fixed.js';
 headerFixed();
 
-//Brands click hidden
+// Brands click hidden
 import brandsHidden from './modules/brands-block-hidden.js';
 brandsHidden();
 
@@ -14,6 +14,8 @@ swiperSlider();
 import btnFav from './modules/btn-fav.js';
 btnFav();
 
-// // Мобильная навигация
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+// Мобильная навигация
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
+
+// -----------------------------------------------------

@@ -5,9 +5,15 @@
     gap: 30px;
 
     margin-bottom: 40px;
+
+    @include mobile {
+        margin-bottom: 24px;
+        gap: 10px;
+    }
 }
 
 .block-title__link {
+    
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;

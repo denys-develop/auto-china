@@ -6,6 +6,14 @@
     background: #ececec;
 
     position: relative;
+
+    @include mobile {
+        border-radius: 8px;
+        padding: 8px 12px 0px 12px;
+       
+        width: 160px;
+        height: 144px;
+    }
 }
 
 .classes-card__link {
@@ -33,5 +41,10 @@
 
     &:hover {
         color: var(--light-blue);
+    }
+
+    @include mobile {
+        font-size: 16px;
+        margin-bottom: 30px;
     }
 }

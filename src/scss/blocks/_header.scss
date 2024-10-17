@@ -10,10 +10,16 @@
 	padding: 7.5px 0;
 
 	border-bottom: 1px solid var(--black);
+
+	@include mobile {
+		display: none;
+	}
 }
+
 .nav {
 
 }
+
 .nav__list {
 	display: flex;
 	align-items: center;
@@ -38,6 +44,11 @@
 // Header Bottom
 .header-bottom {
 	padding-top: 20px;
+
+	@include mobile {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
 }
 
 .header__info {
@@ -53,6 +64,10 @@
 	display: flex;
 	align-items: center;
 	gap: 8px;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .catalog-btn {
@@ -110,6 +125,10 @@
 	text-align: right;
 	font-family: var(--font-family);
 	line-height: 120%;
+
+	@include mobile {
+		display: none;
+	}
 }
 
 .header__tel {
@@ -134,5 +153,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@include mobile {
+		display: none;
+	}
 }
 
+.header__info-search {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}

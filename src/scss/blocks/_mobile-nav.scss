@@ -1,17 +1,32 @@
+.logo__wrapper .mobile-nav-btn {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+.logo__wrapper2 .mobile-nav-btn {
+	display: none;
+
+	@include mobile {
+		display: block;
+	}
+}
+
+
 .mobile-nav {
 	position: fixed;
 	// top: 0;
 	top: -100%;
 	width: 100%;
 	height: 100%;
-    z-index: 99;
+    z-index: 101;
 
 	display: flex;
     flex-direction: column;
     align-items: center;
 	justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
 	background: #8ccae6;
 	transition: all 0.2s ease-in;

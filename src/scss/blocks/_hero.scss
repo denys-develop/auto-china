@@ -3,15 +3,27 @@
     padding-top: 236px;
 	padding-bottom: 168px;
 
-	background-color: #1D222C;
+	background-color: #060d17;
 	background-image: url('./../../img/hero/hero.jpg');
 	background-position: 60% bottom; /* x y */
 	background-size: cover;
 	background-repeat: no-repeat;
+
+    @include mobile {
+        padding-top: 100px;
+        padding-bottom: 244px;
+
+        background-size: 1100px;
+    }
 }
 
 .hero__content {
     max-width: 468px;
+
+    @include mobile {
+        max-width: 312px;
+        padding-left: 22px;
+    }
 }
 
 .hero__title {
@@ -23,6 +35,11 @@
     color: var(--white);
 
     margin-bottom: 44px;
+
+    @include mobile {
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
 }
 
 .hero__button {

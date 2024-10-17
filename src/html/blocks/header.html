@@ -17,7 +17,13 @@
     <div class="header-bottom">
         <div class="container">
             <div class="header__info">
-                <a href="#!" class="logo">LO<span class="logo__accent">GO</span></a>
+                <div class="logo__wrapper">
+                    <button class="mobile-nav-btn">
+                        <div class="nav-icon"></div>
+                    </button>
+                  
+                    <a href="index.html" class="logo">LO<span class="logo__accent">GO</span></a>
+                </div>
 
                 <div class="header__search">
                     <a href="catalog-auto.html" class="header__search-btn">
@@ -45,11 +51,14 @@
                         <img src="./../../img/icons/favorite-01.svg" alt="">
                     </a>
                 </div> 
+
+                <button class="header__info-search">
+                    <img src="./..//..//img/icons/search-mobile01.svg" alt="">
+                </button>
             </div>
         </div>
+
+        @@include('mobile-nav.html')
     </div>
 </header>
-@@include('mobile-nav.html')
-<!-- <button class="mobile-nav-btn">
-    <div class="nav-icon"></div>
-</button> -->
+

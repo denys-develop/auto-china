@@ -7,7 +7,18 @@
     height: 56px;
 
     padding: 8px 10px;
+
+    @include mobile {
+        width: 166px;
+    }
 }   
+
+.brands-card:nth-of-type(1n+10){
+    @include mobile {
+        display: none;
+    }
+}
+
 
 .brands-card:nth-of-type(1n+18){
     display: none;
@@ -49,6 +60,10 @@
         height: 100%;
         z-index: 11;
     }
+
+    @include mobile {
+        font-size: 16px;
+    }
 }
 
 .brands-card__count {
@@ -63,11 +78,5 @@
     line-height: 120%;
     text-align: center;
     color: var(--grey);
-
 }
 
-// .brands-popular:nth-of-type(1n+10){
-//     @include mobile {
-//         display: none;
-//     }
-// }

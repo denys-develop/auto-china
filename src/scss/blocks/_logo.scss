@@ -1,3 +1,16 @@
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo__wrapper2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
 .logo {
     font-family: var(--second-family);
     font-weight: 900;

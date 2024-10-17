@@ -1,12 +1,21 @@
-.swiper-slide.swiper-slide-active, .swiper-slide.swiper-slide-next  {
-    max-width: 590px !important;
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-
-    // @include tablet {
-    //     max-width: 550px !important;
-    // }
+.swiper-slide {
+    width: 590px !important;
+    height: 280px !important;
 
     @include mobile {
         width: 312px !important;
+        height: 196px !important;
     }
+}
+
+// --------------------------------
+.swiper-dots {
+    bottom: 20px !important;
+    left: 40% !important;
+   
 }

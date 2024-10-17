@@ -5,6 +5,10 @@
 
 	max-width: var(--container-width);
 	width: 100%;
+
+	@include mobile {
+		padding: 0 var(--container-paddingMobile);
+	}
 }
 
 .container-full {
@@ -91,4 +95,8 @@
 	margin: 0 auto;
 	background: var(--blue);
 	border-radius: 28px;
+
+	@include mobile {
+		padding: 24px;
+	}
 }

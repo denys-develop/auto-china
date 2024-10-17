@@ -1,5 +1,9 @@
 .search {
     padding: 40px 0;
+
+    @include mobile {
+        padding: 20px 0;
+    }
 }
 
 .search-wrapper {
@@ -11,6 +15,10 @@
     height: 100%;
     background: var(--blue);    
     box-shadow: 0 20px 20px 0 rgba(8, 50, 96, 0.15);
+
+    @include mobile {
+        padding: 24px 16px 32px 16px;
+    }
 }
 
 .search-wrapper::before {
@@ -25,6 +33,10 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 60px;
     z-index: 1;
+
+    @include mobile {
+        display: none;
+    }
 }
   
 
@@ -37,6 +49,11 @@
     color: var(--white);
 
     margin-bottom: 32px;
+
+    @include mobile {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
 }
 
 
