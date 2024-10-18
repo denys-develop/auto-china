@@ -15,5 +15,5 @@ import filterHidden from './modules/filter-hidden.js';
 filterHidden();
 
 // Мобильная навигация
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+import mobileNav2 from './modules/mobile-nav2.js';
+mobileNav2();

@@ -1,7 +1,7 @@
-function mobileNav() {
-	const navBtn = document.querySelector('.mobile-nav-btn');
-	const nav = document.querySelector('.mobile-nav');
-	const menuIcon = document.querySelector('.nav-icon');
+function mobileNav2() {
+	const navBtn = document.querySelector('.mobile-nav-btn2');
+	const nav = document.querySelector('.mobile-nav2');
+	const menuIcon = document.querySelector('.nav-icon2');
 
 	
 	navBtn.onclick = function () {
@@ -11,6 +11,6 @@ function mobileNav() {
 	};
 }
 
-export default mobileNav;
+export default mobileNav2;
 
 // to do остановить прокрутку скрола 

@@ -5,8 +5,6 @@ import 'swiper/css/bundle';
 function swiperSlider() {
   let swiper = new Swiper(".mySwiper", {
     // slidesPerView: 1,
-    // spaceBetween: 8,
-
     slidesPerView: "auto",
     spaceBetween: 8,
 
@@ -17,12 +15,10 @@ function swiperSlider() {
       }
     },
 
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   dynamicBullets: true,
-    // },
-
-
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+    },
 
   });
 }

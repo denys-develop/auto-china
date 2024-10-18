@@ -13,9 +13,20 @@
     }
 }
 
-// --------------------------------
-.swiper-dots {
-    bottom: 20px !important;
-    left: 40% !important;
-   
+.swiper-wrapper{
+    padding-bottom: 30px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px !important;
+}
+
+.swiper-pagination {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+  
+
+.swiper-pagination-bullet {
+    
 }

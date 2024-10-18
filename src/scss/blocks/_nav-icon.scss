@@ -63,6 +63,7 @@
 	background-color: transparent;
 }
 
+
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
 	top: 0;
@@ -84,9 +85,3 @@
 	z-index: 999;
 	// display: none;
 }
-
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
