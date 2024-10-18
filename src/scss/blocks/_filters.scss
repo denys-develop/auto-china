@@ -5,16 +5,16 @@
 
     @include mobile {
         display: none;
-        // display: block;
         background: var(--white);
     
         position: absolute;
         left: 0px;
         top: 0px;
         width: 100%;
-        padding: 70px 16px 100px 16px !important;
+        padding: 16px;
         z-index: 1000;
     }
+
 }
 
 .filter {
@@ -120,7 +120,8 @@
     @include mobile {
         display: block;
 
+        display: flex;
+        gap: 100px;
         text-align: center;
-        padding: 17px 0;
     }
 }

@@ -28,7 +28,7 @@
     align-items: center;
 	justify-content: center;
     // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: #8ccae6;
+	background: #f2eeee;
 	transition: all 0.2s ease-in;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .mobile-nav a, .mobile-nav2 a {
-	color: #fff;
+	color: var(--black);
 }
 
 .mobile-nav__list, .mobile-nav__list2 {

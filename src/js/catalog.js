@@ -17,3 +17,11 @@ filterHidden();
 // Мобильная навигация
 import mobileNav2 from './modules/mobile-nav2.js';
 mobileNav2();
+
+//  Каталог модальное окно фильров по нажатию на кнопку
+import catalogFiltersModalMobile from './modules/catalog-filters-modal-mobile.js';
+catalogFiltersModalMobile();
+
+//  Каталог модальное окно фильров по нажатию на кнопку
+import catalogFiltersModalRadio from './modules/catalog-filters-modal-radio.js';
+catalogFiltersModalRadio();
