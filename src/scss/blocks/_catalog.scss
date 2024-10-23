@@ -16,40 +16,6 @@
     }
 }
 
-// Catalog Navigation
-.catalog__nav {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    margin-top: 24px;
-    margin-bottom: 32px;
-}
-
-.catalog__nav-link {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    text-align: right;
-    color: var(--grey);
-
-    transition: color .2s ease-in;
-
-    &:hover {
-        color: var(--light-blue)
-    }
-}
-
-.catalog__nav-head {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    text-align: right;
-    color: var(--grey);
-}
-// -------- END --------
-
 .catalog__row {
     display: grid;
     // grid-template-columns: 1fr 895px;
@@ -202,6 +168,8 @@
 }
 
 .catalog__item {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -210,8 +178,21 @@
         padding-top: 24px;
         padding-bottom: 24px;
         gap: 4px;
-        // background-color: #f76262;
-        // overflow: visible !important;
+        
+        &::before {
+            content: '';
+    
+            background: var(--light-grey);
+            width: 106%;
+            height: 100%;
+    
+            position: absolute;
+            top: 0;
+            left: -10px;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
     }
 }
 

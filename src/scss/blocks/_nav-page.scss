@@ -1,0 +1,61 @@
+// Catalog Nav
+.nav__page {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.nav__page-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: var(--light-blue)
+    }
+}
+
+.nav__page-head {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--grey);
+}
+// -------- END --------
+
+
+
+
+// Card Nav
+.card__nav-desctop{
+    display: block;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.card__nav-mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        padding: 30px 0;
+    }
+
+}
+// -------- END --------
