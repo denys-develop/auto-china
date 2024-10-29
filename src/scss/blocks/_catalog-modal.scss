@@ -2,6 +2,18 @@
     display: none;
 }
 
+// Оверлей покрывает header, костыль (потому что не работает иначе)
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 101; /* выше z-index body, но ниже z-index */
+    display: none;
+}
+
 .catalog-modal {
     background: rgba(0, 0, 0, 0.4);
     padding: 10px;
@@ -11,7 +23,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 100000000;
+    z-index: 999;
 }
 
 .catalog-modal-wrap {
@@ -22,7 +34,7 @@
     left: 0;
     bottom: 0;
     // transform: translateY(-50%);
-    z-index: 100;
+    z-index: 999;
 
     border-radius: 16px 16px 0 0;
     padding: 16px 16px 40px 16px;

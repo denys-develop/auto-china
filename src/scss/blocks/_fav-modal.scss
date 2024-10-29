@@ -14,7 +14,17 @@
 
     background: var(--white);
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+    @include mobile {
+        top: -34px;
+        right: -7px;
+
+        width: 180px;
+        height: 33px;
+        padding: 8px 8px;
+    }
 }
+
 
 .fav-btn-modal__desc {
     font-family: var(--font-family);

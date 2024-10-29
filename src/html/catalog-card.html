@@ -19,34 +19,8 @@
 		@@include('blocks/card.html')
 	</main>
 	
-
 	@@include('blocks/footer.html')
-	<script src="./js/card.bundle.js"></script>
-
-
-	<!-- Код не работает внутри сборки card.js -->
-	<script>
-		function changeImage(element) {
-			const largeImage = document.getElementById('large-image');
-			const smallImage = element.cloneNode(true); 
-
-			largeImage.innerHTML = smallImage.outerHTML;
-
-			const smallImages = document.querySelectorAll('.card__img-2');
-
-			smallImages.forEach(card => {
-				const pictureElement = card.querySelector('picture');
-				if (pictureElement) {
-					const img = pictureElement.querySelector('img');
-					if (img) {
-						img.classList.remove('active');
-					}
-				}
-			});
-			
-			element.classList.add('active');
-        }
-	</script>
+	<script src="./js/card.bundle.js"></script> 
 </body>
 
 </html>

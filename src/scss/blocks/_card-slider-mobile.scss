@@ -1,0 +1,8 @@
+.card-slider-mobile {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
+
