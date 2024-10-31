@@ -2,8 +2,8 @@
     display: none;
 
     position: absolute;
-    top: -18px;
-    right: -65px;
+    top: -28px;
+    right: -64px;
     z-index: 30;
 
     width: 194px;
@@ -12,14 +12,33 @@
     border-radius: 4px;
     padding: 8px 16px;
 
+    text-align: center;
+
     background: var(--white);
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        right: 84px;
+        bottom: -12px;
+
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 16px solid var(--white);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
     @include mobile {
         top: -34px;
-        right: -7px;
+        right: -1px;
 
-        width: 180px;
+        width: 170px;
         height: 33px;
         padding: 8px 8px;
     }
@@ -35,5 +54,9 @@
 
     span {
         color: var(--light-blue);
+    }
+
+    @include mobile {
+        font-size: 13px;
     }
 }

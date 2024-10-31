@@ -1,37 +1,36 @@
 function catalogFiltersModalRadio() {
     document.addEventListener('DOMContentLoaded', () => {
-        const filters = document.querySelector('.catalog__items-filters-modal');
-        const catalogModal = document.querySelector('.catalog-modal'); 
-        const openFiltersButton = document.querySelector('.catalog__items-filters-left');
-        const closeFiltersButton = document.querySelector('.catalog-modal-btnClose');
-        const body = document.querySelector('body');
-        const headerOverlay = document.querySelector('.header-overlay'); 
+        const selectors = {
+            filters: '.catalog__items-filters-modal',
+            catalogModal: '.catalog-modal',
+            openFiltersButton: '.catalog__items-filters-left',
+            closeFiltersButton: '.catalog-modal-btnClose',
+            body: 'body',
+            headerOverlay: '.header-overlay'
+        };
+        
+        const elements = Object.fromEntries(
+            Object.entries(selectors).map(([key, selector]) => [key, document.querySelector(selector)])
+        );
+
+        const { filters, catalogModal, openFiltersButton, closeFiltersButton, body, headerOverlay } = elements;
 
         if (openFiltersButton && filters && catalogModal && closeFiltersButton && headerOverlay) {
-            openFiltersButton.addEventListener('click', () => {
-                filters.style.display = 'block';
-                catalogModal.style.display = 'block';
-                headerOverlay.style.display = 'block'; 
-                body.classList.add('no-scroll');
-            });
+            const toggleModalDisplay = (displayValue) => {
+                filters.style.display = displayValue;
+                catalogModal.style.display = displayValue;
+                headerOverlay.style.display = displayValue;
+                body.classList.toggle('no-scroll', displayValue === 'block');
+            };
 
-            closeFiltersButton.addEventListener('click', () => {
-                filters.style.display = 'none';
-                catalogModal.style.display = 'none'; 
-                headerOverlay.style.display = 'none'; 
-                body.classList.remove('no-scroll');
-            });
+            openFiltersButton.addEventListener('click', () => toggleModalDisplay('block'));
+            closeFiltersButton.addEventListener('click', () => toggleModalDisplay('none'));
 
             catalogModal.addEventListener('click', (event) => {
-                if (event.target === catalogModal) {
-                    filters.style.display = 'none';
-                    catalogModal.style.display = 'none';
-                    headerOverlay.style.display = 'none';
-                    body.classList.remove('no-scroll');
-                }
+                if (event.target === catalogModal) toggleModalDisplay('none');
             });
         } else {
-            console.error('нет элемента');
+            console.error('elements missing');
         }
     });
 }
