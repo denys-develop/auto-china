@@ -114,6 +114,12 @@
     color: var(--black);
 }
 
+.filter-range-sliders {
+    @include mobile {
+        padding-top: 16px;
+    }
+}
+
 // ---------------------------
 .filters-mobile-title {
     display: none;

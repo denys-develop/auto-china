@@ -23,7 +23,12 @@ function catalogFiltersModalRadio() {
                 body.classList.toggle('no-scroll', displayValue === 'block');
             };
 
-            openFiltersButton.addEventListener('click', () => toggleModalDisplay('block'));
+            openFiltersButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                setTimeout(() => toggleModalDisplay('block'), 300); 
+            });
+
             closeFiltersButton.addEventListener('click', () => toggleModalDisplay('none'));
 
             catalogModal.addEventListener('click', (event) => {
